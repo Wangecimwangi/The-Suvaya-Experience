@@ -1,0 +1,1147 @@
+﻿node.exe : 2025-10-14T07:55:24.285Z vite:config config file loaded in 620.80ms
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2025-10-14T07:5...ded in 620.80ms:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2025-10-14T07:55:24.290Z vite:env loading env files: [
+  'C:/Users/USER/Desktop/the-suvaya-experience/.env',
+  'C:/Users/USER/Desktop/the-suvaya-experience/.env.local',
+  'C:/Users/USER/Desktop/the-suvaya-experience/.env.development',
+  'C:/Users/USER/Desktop/the-suvaya-experience/.env.development.local'
+]
+2025-10-14T07:55:24.291Z vite:env env files loaded in 0.78ms
+2025-10-14T07:55:24.292Z vite:env using resolved env: {}
+2025-10-14T07:55:24.313Z vite:config using resolved config: {
+  plugins: [
+    'vite:optimized-deps',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'vite-plugin-inspect',
+    'vite-plugin-vue-inspector',
+    'vite-plugin-vue-devtools',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'vite:vue',
+    'vite:wasm-fallback',
+    'vite:define',
+    'vite:css-post',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'vite-plugin-vue-inspector:post',
+    'vite:client-inject',
+    'vite:css-analysis',
+    'vite:import-analysis'
+  ],
+  resolve: {
+    externalConditions: [ 'node', 'module-sync' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'vue' ],
+    noExternal: [],
+    external: [],
+    preserveSymlinks: false,
+    alias: [
+      {
+        find: '@',
+        replacement: 'C:\\Users\\USER\\Desktop\\the-suvaya-experience\\src'
+      },
+      {
+        find: /^\/?@vite\/env/,
+        replacement: '/@fs/C:/Users/USER/Desktop/the-suvaya-experience/node_modules/vite/dist/client/env.mjs'
+      },
+      {
+        find: /^\/?@vite\/client/,
+        replacement: '/@fs/C:/Users/USER/Desktop/the-suvaya-experience/node_modules/vite/dist/client/client.mjs'
+      }
+    ],
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'module', 'browser', 'development|production' ],
+    builtins: []
+  },
+  server: {
+    port: 5173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/
+    },
+    headers: {},
+    warmup: { clientFiles: [], ssrFiles: [] },
+    middlewareMode: false,
+    fs: {
+      strict: true,
+      deny: [ '.env', '.env.*', '*.{crt,pem}', '**/.git/**' ],
+      allow: [ 'C:/Users/USER/Desktop/the-suvaya-experience' ]
+    },
+    preTransformRequests: true,
+    perEnvironmentStartEndDuringDev: false,
+    sourcemapIgnoreList: [Function: isInNodeModules]
+  },
+  define: {
+    __VUE_OPTIONS_API__: true,
+    __VUE_PROD_DEVTOOLS__: false,
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false
+  },
+  ssr: {
+    target: 'node',
+    optimizeDeps: {
+      esbuildOptions: { preserveSymlinks: false },
+      include: [],
+      exclude: [],
+      needsInterop: [],
+      extensions: [],
+      holdUntilCrawlEnd: true,
+      force: false,
+      noDiscovery: true
+    },
+    external: [],
+    noExternal: [],
+    resolve: {
+      conditions: [ 'module', 'node', 'development|production' ],
+      externalConditions: [ 'node', 'module-sync' ]
+    }
+  },
+  environments: {
+    client: {
+      define: {
+        __VUE_OPTIONS_API__: true,
+        __VUE_PROD_DEVTOOLS__: false,
+        __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false
+      },
+      resolve: {
+        externalConditions: [ 'node', 'module-sync' ],
+        extensions: [
+          '.mjs',  '.js',
+          '.mts',  '.ts',
+          '.jsx',  '.tsx',
+          '.json'
+        ],
+        dedupe: [ 'vue' ],
+        noExternal: [],
+        external: [],
+        preserveSymlinks: false,
+        alias: [
+          {
+            find: '@',
+            replacement: 'C:\\Users\\USER\\Desktop\\the-suvaya-experience\\src'
+          },
+          {
+            find: /^\/?@vite\/env/,
+            replacement: '/@fs/C:/Users/USER/Desktop/the-suvaya-experience/node_modules/vite/dist/client/env.mjs'
+          },
+          {
+            find: /^\/?@vite\/client/,
+            replacement: '/@fs/C:/Users/USER/Desktop/the-suvaya-experience/node_modules/vite/dist/client/client.mjs'
+          }
+        ],
+        mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+        conditions: [ 'module', 'browser', 'development|production' ],
+        builtins: []
+      },
+      keepProcessEnv: false,
+      consumer: 'client',
+      optimizeDeps: {
+        include: [],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: undefined,
+        holdUntilCrawlEnd: true,
+        force: false,
+        noDiscovery: false,
+        esbuildOptions: { preserveSymlinks: false }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: true },
+        sourcemapIgnoreList: [Function: isInNodeModules],
+        preTransformRequests: true,
+        createEnvironment: [Function: defaultCreateClientDevEnvironment],
+        recoverable: true,
+        moduleRunnerTransform: false
+      },
+      build: {
+        target: [ 'chrome107', 'edge107', 'firefox104', 'safari16' ],
+        polyfillModulePreload: true,
+        modulePreload: { polyfill: true },
+        outDir: 'dist',
+        assetsDir: 'assets',
+        assetsInlineLimit: 4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: {},
+        commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+        dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+        write: true,
+        emptyOutDir: null,
+        copyPublicDir: true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: false,
+        reportCompressedSize: true,
+        chunkSizeWarningLimit: 500,
+        watch: null,
+        cssCodeSplit: true,
+        minify: 'esbuild',
+        ssr: false,
+        emitAssets: true,
+        createEnvironment: [Function: createEnvironment],
+        cssTarget: [ 'chrome107', 'edge107', 'firefox104', 'safari16' ],
+        cssMinify: true
+      },
+      plugins: [
+        {
+          name: 'vite:optimized-deps',
+          applyToEnvironment: [Function: applyToEnvironment],
+          resolveId: [Function (anonymous)],
+          load: [Function (anonymous)]
+        },
+        {
+          name: 'vite:watch-package-data',
+          buildStart: [Function: buildStart],
+          buildEnd: [Function: buildEnd],
+          watchChange: [Function: watchChange]
+        },
+        {
+          name: 'vite:pre-alias',
+          applyToEnvironment: [Function: applyToEnvironment],
+          resolveId: [Function (anonymous)]
+        },
+        {
+          name: 'alias',
+          buildStart: [AsyncFunction: buildStart],
+          resolveId: [Function (anonymous)]
+        },
+        {
+          name: 'vite-plugin-inspect',
+          enforce: 'pre',
+          apply: [Function: apply],
+          configResolved: [Function: configResolved],
+          configureServer: [Function: configureServer],
+          load: { order: 'pre', handler: [Function (anonymous)] },
+          hotUpdate: [Function: hotUpdate],
+          buildEnd: [AsyncFunction: buildEnd],
+          sharedDuringBuild: true
+        },
+        {
+          name: 'vite-plugin-vue-inspector',
+          enforce: 'pre',
+          apply: [Function: apply],
+          resolveId: [Function (anonymous)],
+          load: [Function (anonymous)],
+          transform: [Function (anonymous)],
+          configureServer: [Function: configureServer],
+          transformIndexHtml: [Function: transformIndexHtml],
+          configResolved: [Function: configResolved]
+        },
+        {
+          name: 'vite-plugin-vue-devtools',
+          enforce: 'pre',
+          apply: 'serve',
+          configResolved: [Function: configResolved],
+          configureServer: [Function: configureServer],
+          resolveId: [Function (anonymous)],
+          load: [Function (anonymous)],
+          transform: [Function (anonymous)],
+          transformIndexHtml: [Function: transformIndexHtml],
+          buildEnd: [AsyncFunction: buildEnd]
+        },
+        {
+          name: 'vite:modulepreload-polyfill',
+          resolveId: {
+            filter: { id: /^vite\/modulepreload\-polyfill$/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: /^ vite\/modulepreload\-polyfill\.js$/ },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:resolve',
+          resolveId: {
+            filter: { id: { exclude: /^(?:\0|\/?virtual:)/ } },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: {
+              id: [
+                /^__vite\-browser\-external/,
+                /^__vite\-optional\-peer\-dep/
+              ]
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:html-inline-proxy',
+          resolveId: {
+            filter: { id: /[?&]html-proxy\b/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: /[?&]html-proxy\b/ },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:css',
+          buildStart: [Function: buildStart],
+          buildEnd: [Function: buildEnd],
+          load: {
+            filter: {
+              id: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/
+            },
+            handler: [Function (anonymous)]
+          },
+          transform: {
+            filter: {
+              id: {
+                include: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/,
+                exclude: [
+                  /[?&]commonjs-proxy/,
+                  /[?&](?:worker|sharedworker|raw|url)\b/
+                ]
+              }
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:esbuild',
+          configureServer: [Function: configureServer],
+          transform: [Function (anonymous)]
+        },
+        {
+          name: 'vite:json',
+          transform: {
+            filter: {
+              id: {
+                include: /\.json(?:$|\?)(?!commonjs-(?:proxy|external))/,
+                exclude: /[?&](?:worker|sharedworker|raw|url)\b/
+              }
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:wasm-helper',
+          resolveId: {
+            filter: { id: /^ vite\/wasm\-helper\.js$/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: {
+              id: [
+                /^ vite\/wasm\-helper\.js$/,
+                /(?<![?#].*)\.wasm\?init/
+              ]
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:worker',
+          buildStart: [Function: buildStart],
+          load: {
+            filter: { id: /(?:\?|&)(worker|sharedworker)(?:&|$)/ },
+            handler: [Function (anonymous)]
+          },
+          shouldTransformCachedModule: [Function: shouldTransformCachedModule],
+          transform: {
+            filter: { id: /(?:\?|&)worker_file&type=(\w+)(?:&|$)/ },
+            handler: [Function (anonymous)]
+          },
+          renderChunk: [Function: renderChunk],
+          generateBundle: [Function: generateBundle]
+        },
+        {
+          name: 'vite:asset',
+          perEnvironmentStartEndDuringDev: true,
+          buildStart: [Function: buildStart],
+          resolveId: { handler: [Function (anonymous)] },
+          load: {
+            filter: { id: { exclude: /^\0/ } },
+            handler: [Function (anonymous)]
+          },
+          renderChunk: [Function: renderChunk],
+          generateBundle: [Function: generateBundle]
+        },
+        {
+          name: 'vite:vue',
+          api: {
+            options: [Getter/Setter],
+            include: [Getter/Setter],
+            exclude: [Getter/Setter],
+            version: '6.0.1'
+          },
+          handleHotUpdate: [Function: handleHotUpdate],
+          config: [Function: config],
+          configResolved: [Function: configResolved],
+          options: [Function: options],
+          shouldTransformCachedModule: [Function: shouldTransformCachedModule],
+          configureServer: [Function: configureServer],
+          buildStart: [Function: buildStart],
+          resolveId: {
+            filter: { id: [ /^ plugin\-vue:export\-helper$/, /[?&]vue\b/ ] },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: [ /^ plugin\-vue:export\-helper$/, /[?&]vue\b/ ] },
+            handler: [Function (anonymous)]
+          },
+          transform: { handler: [Function (anonymous)] }
+        },
+        {
+          name: 'vite:wasm-fallback',
+          load: {
+            filter: { id: /\.wasm$/ },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:define',
+          transform: { handler: [Function (anonymous)] }
+        },
+        {
+          name: 'vite:css-post',
+          renderStart: [Function: renderStart],
+          transform: {
+            filter: {
+              id: {
+                include: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/,
+                exclude: [
+                  /[?&]commonjs-proxy/,
+                  /[?&](?:worker|sharedworker|raw|url)\b/
+                ]
+              }
+            },
+            handler: [Function (anonymous)]
+          },
+          renderChunk: [AsyncFunction: renderChunk],
+          augmentChunkHash: [Function: augmentChunkHash],
+          generateBundle: [AsyncFunction: generateBundle]
+        },
+        {
+          name: 'vite:worker-import-meta-url',
+          applyToEnvironment: [Function: applyToEnvironment],
+          shouldTransformCachedModule: [Function: shouldTransformCachedModule],
+          transform: {
+            filter: {
+              code: /new\s+(?:Worker|SharedWorker)\s*\(\s*new\s+URL.+?import\.meta\.url/s
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:asset-import-meta-url',
+          applyToEnvironment: [Function: applyToEnvironment],
+          transform: {
+            filter: {
+              id: {
+                exclude: [
+                  /^ vite\/preload\-helper\.js$/,
+                  /^C:\\Users\\USER\\Desktop\\the\-suvaya\-experience\\node_modules\\vite\\dist\\client\\client\.mjs$/
+                ]
+              },
+              code: /new\s+URL.+import\.meta\.url/s
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:dynamic-import-vars',
+          resolveId: {
+            filter: { id: /^ vite\/dynamic\-import\-helper\.js$/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: /^ vite\/dynamic\-import\-helper\.js$/ },
+            handler: [Function (anonymous)]
+          },
+          transform: {
+            filter: {
+              id: {
+                exclude: /^C:\\Users\\USER\\Desktop\\the\-suvaya\-experience\\node_modules\\vite\\dist\\client\\client\.mjs$/
+              },
+              code: /\bimport\s*[(/]/
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:import-glob',
+          buildStart: [Function: buildStart],
+          transform: {
+            filter: { code: 'import.meta.glob' },
+            handler: [Function (anonymous)]
+          },
+          hotUpdate: [Function: hotUpdate]
+        },
+        {
+          name: 'vite-plugin-vue-inspector:post',
+          enforce: 'post',
+          apply: [Function: apply],
+          transform: [Function (anonymous)]
+        },
+        {
+          name: 'vite:client-inject',
+          buildStart: [AsyncFunction: buildStart],
+          transform: [Function (anonymous)]
+        },
+        {
+          name: 'vite:css-analysis',
+          transform: {
+            filter: {
+              id: {
+                include: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/,
+                exclude: [
+                  /[?&]commonjs-proxy/,
+                  /[?&](?:worker|sharedworker|raw|url)\b/
+                ]
+              }
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:import-analysis',
+          transform: [Function (anonymous)]
+        }
+      ]
+    },
+    ssr: {
+      define: {
+        __VUE_OPTIONS_API__: true,
+        __VUE_PROD_DEVTOOLS__: false,
+        __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false
+      },
+      resolve: {
+        externalConditions: [ 'node', 'module-sync' ],
+        extensions: [
+          '.mjs',  '.js',
+          '.mts',  '.ts',
+          '.jsx',  '.tsx',
+          '.json'
+        ],
+        dedupe: [ 'vue' ],
+        noExternal: [],
+        external: [],
+        preserveSymlinks: false,
+        alias: [
+          {
+            find: '@',
+            replacement: 'C:\\Users\\USER\\Desktop\\the-suvaya-experience\\src'
+          },
+          {
+            find: /^\/?@vite\/env/,
+            replacement: '/@fs/C:/Users/USER/Desktop/the-suvaya-experience/node_modules/vite/dist/client/env.mjs'
+          },
+          {
+            find: /^\/?@vite\/client/,
+            replacement: '/@fs/C:/Users/USER/Desktop/the-suvaya-experience/node_modules/vite/dist/client/client.mjs'
+          }
+        ],
+        mainFields: [ 'module', 'jsnext:main', 'jsnext' ],
+        conditions: [ 'module', 'node', 'development|production' ],
+        builtins: [
+          '_http_agent',         '_http_client',        '_http_common',
+          '_http_incoming',      '_http_outgoing',      '_http_server',
+          '_stream_duplex',      '_stream_passthrough', '_stream_readable',
+          '_stream_transform',   '_stream_wrap',        '_stream_writable',
+          '_tls_common',         '_tls_wrap',           'assert',
+          'assert/strict',       'async_hooks',         'buffer',
+          'child_process',       'cluster',             'console',
+          'constants',           'crypto',              'dgram',
+          'diagnostics_channel', 'dns',                 'dns/promises',
+          'domain',              'events',              'fs',
+          'fs/promises',         'http',                'http2',
+          'https',               'inspector',           'inspector/promises',
+          'module',              'net',                 'os',
+          'path',                'path/posix',          'path/win32',
+          'perf_hooks',          'process',             'punycode',
+          'querystring',         'readline',            'readline/promises',
+          'repl',                'stream',              'stream/consumers',
+          'stream/promises',     'stream/web',          'string_decoder',
+          'sys',                 'timers',              'timers/promises',
+          'tls',                 'trace_events',        'tty',
+          'url',                 'util',                'util/types',
+          'v8',                  'vm',                  'wasi',
+          'worker_threads',      'zlib',                /^node:/,
+          /^bun:/
+        ]
+      },
+      keepProcessEnv: true,
+      consumer: 'server',
+      optimizeDeps: {
+        include: [],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: undefined,
+        holdUntilCrawlEnd: true,
+        force: false,
+        noDiscovery: true,
+        esbuildOptions: { preserveSymlinks: false }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: true },
+        sourcemapIgnoreList: [Function: isInNodeModules],
+        preTransformRequests: false,
+        createEnvironment: [Function: defaultCreateDevEnvironment],
+        recoverable: false,
+        moduleRunnerTransform: true
+      },
+      build: {
+        target: [ 'chrome107', 'edge107', 'firefox104', 'safari16' ],
+        polyfillModulePreload: true,
+        modulePreload: { polyfill: true },
+        outDir: 'dist',
+        assetsDir: 'assets',
+        assetsInlineLimit: 4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: {},
+        commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+        dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+        write: true,
+        emptyOutDir: null,
+        copyPublicDir: true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: false,
+        reportCompressedSize: true,
+        chunkSizeWarningLimit: 500,
+        watch: null,
+        cssCodeSplit: true,
+        minify: false,
+        ssr: true,
+        emitAssets: false,
+        createEnvironment: [Function: createEnvironment],
+        cssTarget: [ 'chrome107', 'edge107', 'firefox104', 'safari16' ],
+        cssMinify: 'esbuild'
+      },
+      plugins: [
+        {
+          name: 'vite:watch-package-data',
+          buildStart: [Function: buildStart],
+          buildEnd: [Function: buildEnd],
+          watchChange: [Function: watchChange]
+        },
+        {
+          name: 'alias',
+          buildStart: [AsyncFunction: buildStart],
+          resolveId: [Function (anonymous)]
+        },
+        {
+          name: 'vite-plugin-inspect',
+          enforce: 'pre',
+          apply: [Function: apply],
+          configResolved: [Function: configResolved],
+          configureServer: [Function: configureServer],
+          load: { order: 'pre', handler: [Function (anonymous)] },
+          hotUpdate: [Function: hotUpdate],
+          buildEnd: [AsyncFunction: buildEnd],
+          sharedDuringBuild: true
+        },
+        {
+          name: 'vite-plugin-vue-inspector',
+          enforce: 'pre',
+          apply: [Function: apply],
+          resolveId: [Function (anonymous)],
+          load: [Function (anonymous)],
+          transform: [Function (anonymous)],
+          configureServer: [Function: configureServer],
+          transformIndexHtml: [Function: transformIndexHtml],
+          configResolved: [Function: configResolved]
+        },
+        {
+          name: 'vite-plugin-vue-devtools',
+          enforce: 'pre',
+          apply: 'serve',
+          configResolved: [Function: configResolved],
+          configureServer: [Function: configureServer],
+          resolveId: [Function (anonymous)],
+          load: [Function (anonymous)],
+          transform: [Function (anonymous)],
+          transformIndexHtml: [Function: transformIndexHtml],
+          buildEnd: [AsyncFunction: buildEnd]
+        },
+        {
+          name: 'vite:modulepreload-polyfill',
+          resolveId: {
+            filter: { id: /^vite\/modulepreload\-polyfill$/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: /^ vite\/modulepreload\-polyfill\.js$/ },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:resolve',
+          resolveId: {
+            filter: { id: { exclude: /^(?:\0|\/?virtual:)/ } },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: {
+              id: [
+                /^__vite\-browser\-external/,
+                /^__vite\-optional\-peer\-dep/
+              ]
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:html-inline-proxy',
+          resolveId: {
+            filter: { id: /[?&]html-proxy\b/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: /[?&]html-proxy\b/ },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:css',
+          buildStart: [Function: buildStart],
+          buildEnd: [Function: buildEnd],
+          load: {
+            filter: {
+              id: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/
+            },
+            handler: [Function (anonymous)]
+          },
+          transform: {
+            filter: {
+              id: {
+                include: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/,
+                exclude: [
+                  /[?&]commonjs-proxy/,
+                  /[?&](?:worker|sharedworker|raw|url)\b/
+                ]
+              }
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:esbuild',
+          configureServer: [Function: configureServer],
+          transform: [Function (anonymous)]
+        },
+        {
+          name: 'vite:json',
+          transform: {
+            filter: {
+              id: {
+                include: /\.json(?:$|\?)(?!commonjs-(?:proxy|external))/,
+                exclude: /[?&](?:worker|sharedworker|raw|url)\b/
+              }
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:wasm-helper',
+          resolveId: {
+            filter: { id: /^ vite\/wasm\-helper\.js$/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: {
+              id: [
+                /^ vite\/wasm\-helper\.js$/,
+                /(?<![?#].*)\.wasm\?init/
+              ]
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:worker',
+          buildStart: [Function: buildStart],
+          load: {
+            filter: { id: /(?:\?|&)(worker|sharedworker)(?:&|$)/ },
+            handler: [Function (anonymous)]
+          },
+          shouldTransformCachedModule: [Function: shouldTransformCachedModule],
+          transform: {
+            filter: { id: /(?:\?|&)worker_file&type=(\w+)(?:&|$)/ },
+            handler: [Function (anonymous)]
+          },
+          renderChunk: [Function: renderChunk],
+          generateBundle: [Function: generateBundle]
+        },
+        {
+          name: 'vite:asset',
+          perEnvironmentStartEndDuringDev: true,
+          buildStart: [Function: buildStart],
+          resolveId: { handler: [Function (anonymous)] },
+          load: {
+            filter: { id: { exclude: /^\0/ } },
+            handler: [Function (anonymous)]
+          },
+          renderChunk: [Function: renderChunk],
+          generateBundle: [Function: generateBundle]
+        },
+        {
+          name: 'vite:vue',
+          api: {
+            options: [Getter/Setter],
+            include: [Getter/Setter],
+            exclude: [Getter/Setter],
+            version: '6.0.1'
+          },
+          handleHotUpdate: [Function: handleHotUpdate],
+          config: [Function: config],
+          configResolved: [Function: configResolved],
+          options: [Function: options],
+          shouldTransformCachedModule: [Function: shouldTransformCachedModule],
+          configureServer: [Function: configureServer],
+          buildStart: [Function: buildStart],
+          resolveId: {
+            filter: { id: [ /^ plugin\-vue:export\-helper$/, /[?&]vue\b/ ] },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: [ /^ plugin\-vue:export\-helper$/, /[?&]vue\b/ ] },
+            handler: [Function (anonymous)]
+          },
+          transform: { handler: [Function (anonymous)] }
+        },
+        {
+          name: 'vite:wasm-fallback',
+          load: {
+            filter: { id: /\.wasm$/ },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:define',
+          transform: { handler: [Function (anonymous)] }
+        },
+        {
+          name: 'vite:css-post',
+          renderStart: [Function: renderStart],
+          transform: {
+            filter: {
+              id: {
+                include: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/,
+                exclude: [
+                  /[?&]commonjs-proxy/,
+                  /[?&](?:worker|sharedworker|raw|url)\b/
+                ]
+              }
+            },
+            handler: [Function (anonymous)]
+          },
+          renderChunk: [AsyncFunction: renderChunk],
+          augmentChunkHash: [Function: augmentChunkHash],
+          generateBundle: [AsyncFunction: generateBundle]
+        },
+        {
+          name: 'vite:dynamic-import-vars',
+          resolveId: {
+            filter: { id: /^ vite\/dynamic\-import\-helper\.js$/ },
+            handler: [Function (anonymous)]
+          },
+          load: {
+            filter: { id: /^ vite\/dynamic\-import\-helper\.js$/ },
+            handler: [Function (anonymous)]
+          },
+          transform: {
+            filter: {
+              id: {
+                exclude: /^C:\\Users\\USER\\Desktop\\the\-suvaya\-experience\\node_modules\\vite\\dist\\client\\client\.mjs$/
+              },
+              code: /\bimport\s*[(/]/
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:import-glob',
+          buildStart: [Function: buildStart],
+          transform: {
+            filter: { code: 'import.meta.glob' },
+            handler: [Function (anonymous)]
+          },
+          hotUpdate: [Function: hotUpdate]
+        },
+        {
+          name: 'vite-plugin-vue-inspector:post',
+          enforce: 'post',
+          apply: [Function: apply],
+          transform: [Function (anonymous)]
+        },
+        {
+          name: 'vite:client-inject',
+          buildStart: [AsyncFunction: buildStart],
+          transform: [Function (anonymous)]
+        },
+        {
+          name: 'vite:css-analysis',
+          transform: {
+            filter: {
+              id: {
+                include: /\.(css|less|sass|scss|styl|stylus|pcss|postcss|sss)(?:$|\?)/,
+                exclude: [
+                  /[?&]commonjs-proxy/,
+                  /[?&](?:worker|sharedworker|raw|url)\b/
+                ]
+              }
+            },
+            handler: [Function (anonymous)]
+          }
+        },
+        {
+          name: 'vite:import-analysis',
+          transform: [Function (anonymous)]
+        }
+      ]
+    }
+  },
+  configFile: 'C:/Users/USER/Desktop/the-suvaya-experience/vite.config.js',
+  configFileDependencies: [ 'C:/Users/USER/Desktop/the-suvaya-experience/vite.config.js' ],
+  inlineConfig: {
+    root: undefined,
+    base: undefined,
+    mode: undefined,
+    configFile: undefined,
+    configLoader: undefined,
+    logLevel: undefined,
+    clearScreen: undefined,
+    server: { host: undefined },
+    forceOptimizeDeps: undefined
+  },
+  root: 'C:/Users/USER/Desktop/the-suvaya-experience',
+  base: '/',
+  decodedBase: '/',
+  rawBase: '/',
+  publicDir: 'C:/Users/USER/Desktop/the-suvaya-experience/public',
+  cacheDir: 'C:/Users/USER/Desktop/the-suvaya-experience/node_modules/.vite',
+  command: 'serve',
+  mode: 'development',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: false,
+  css: {
+    transformer: 'postcss',
+    preprocessorMaxWorkers: true,
+    devSourcemap: false
+  },
+  json: { namedExports: true, stringify: 'auto' },
+  esbuild: { jsxDev: true },
+  builder: undefined,
+  preview: {
+    port: 4173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/
+    },
+    headers: {}
+  },
+  envDir: 'C:/Users/USER/Desktop/the-suvaya-experience',
+  env: { BASE_URL: '/', MODE: 'development', DEV: true, PROD: false },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function (anonymous)],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_C:/Users/USER/Desktop/the-suvaya-experience' => {
+      dir: 'C:/Users/USER/Desktop/the-suvaya-experience',
+      data: {
+        name: 'the-suvaya-experience',
+        version: '0.0.0',
+        private: true,
+        type: 'module',
+        engines: { node: '^20.19.0 || >=22.12.0' },
+        scripts: { dev: 'vite', build: 'vite build', preview: 'vite preview' },
+        dependencies: {
+          '@mdi/font': '^7.4.47',
+          pinia: '^3.0.3',
+          vue: '^3.5.22',
+          'vue-router': '^4.5.1',
+          vuetify: '^3.10.5'
+        },
+        devDependencies: {
+          '@vitejs/plugin-vue': '^6.0.1',
+          vite: '^7.1.7',
+          'vite-plugin-vue-devtools': '^8.0.2'
+        }
+      },
+      hasSideEffects: [Function: hasSideEffects],
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  appType: 'spa',
+  experimental: {
+    importGlobRestoreExtension: false,
+    renderBuiltUrl: undefined,
+    hmrPartialAccept: false
+  },
+  future: undefined,
+  optimizeDeps: {
+    include: [],
+    exclude: [],
+    needsInterop: [],
+    extensions: [],
+    disabled: undefined,
+    holdUntilCrawlEnd: true,
+    force: false,
+    noDiscovery: false,
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  dev: {
+    warmup: [],
+    sourcemap: { js: true },
+    sourcemapIgnoreList: [Function: isInNodeModules],
+    preTransformRequests: false,
+    createEnvironment: [Function: defaultCreateDevEnvironment],
+    recoverable: false,
+    moduleRunnerTransform: false
+  },
+  build: {
+    target: [ 'chrome107', 'edge107', 'firefox104', 'safari16' ],
+    polyfillModulePreload: true,
+    modulePreload: { polyfill: true },
+    outDir: 'dist',
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    sourcemap: false,
+    terserOptions: {},
+    rollupOptions: {},
+    commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    cssCodeSplit: true,
+    minify: 'esbuild',
+    ssr: false,
+    emitAssets: false,
+    createEnvironment: [Function: createEnvironment],
+    cssTarget: [ 'chrome107', 'edge107', 'firefox104', 'safari16' ],
+    cssMinify: true
+  },
+  webSocketToken: 'q_MGWUP66Dtq',
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks],
+  createResolver: [Function (anonymous)],
+  fsDenyGlob: [Function: arrayMatcher],
+  safeModulePaths: Set(0) {},
+  Symbol(vite:resolved-config): true
+}
+2025-10-14T07:55:24.674Z vite:deps (client) Hash is consistent. Skipping. Use --force to override.
+2025-10-14T07:55:24.677Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-14T07:55:24.679Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T07:55:24.679Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+Port 5173 is in use, trying another one...
+Port 5174 is in use, trying another one...
+Port 5175 is in use, trying another one...
+
+  [32m[1mVITE[22m v7.1.9[39m  [2mready in [0m[1m1240[22m[2m[0m ms[22m
+
+  [32mΓ₧£[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5176[22m/[39m
+[2m  [32mΓ₧£[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+  Γ₧£  Vue DevTools: Open http://localhost:5176/__devtools__/ as a separate window
+  Γ₧£  Vue DevTools: Press Alt(ΓîÑ)+Shift(Γçº)+D in App to toggle the Vue DevTools
+[2m[32m  Γ₧£[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+2025-10-14T13:54:13.549Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-14T13:54:13.550Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:13.550Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:13.669Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-14T13:54:13.670Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:13.670Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:14.691Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-14T13:54:14.692Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:14.692Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:14.756Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-14T13:54:14.757Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:14.757Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:26.822Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-14T13:54:26.823Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-14T13:54:26.823Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+2025-10-15T08:12:08.989Z vite:hmr [file change] [2msrc/Components/Reservation/Reservation.vue[22m
+2025-10-15T08:12:08.990Z vite:hmr (client) [no modules matched] [2msrc/Components/Reservation/Reservation.vue[22m
+2025-10-15T08:12:08.990Z vite:hmr (ssr) [no modules matched] [2msrc/Components/Reservation/Reservation.vue[22m
+2025-10-15T08:12:09.085Z vite:hmr [file change] [2msrc/Components/Reservation.vue[22m
+2025-10-15T08:12:09.086Z vite:hmr (client) [no modules matched] [2msrc/Components/Reservation.vue[22m
+2025-10-15T08:12:09.086Z vite:hmr (ssr) [no modules matched] [2msrc/Components/Reservation.vue[22m
+2025-10-15T08:12:19.742Z vite:hmr [file change] [2msrc/Components/Reservation/ReservationForm.vue[22m
+2025-10-15T08:12:19.742Z vite:hmr (client) [no modules matched] [2msrc/Components/Reservation/ReservationForm.vue[22m
+2025-10-15T08:12:19.742Z vite:hmr (ssr) [no modules matched] [2msrc/Components/Reservation/ReservationForm.vue[22m
+2025-10-15T08:12:19.847Z vite:hmr [file change] [2msrc/Components/ReservationForm.vue[22m
+2025-10-15T08:12:19.847Z vite:hmr (client) [no modules matched] [2msrc/Components/ReservationForm.vue[22m
+2025-10-15T08:12:19.847Z vite:hmr (ssr) [no modules matched] [2msrc/Components/ReservationForm.vue[22m
+2025-10-15T08:40:27.786Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-15T08:40:27.786Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-15T08:40:27.786Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+2025-10-16T06:53:49.883Z vite:hmr [file change] [2msrc/main.js[22m
+2025-10-16T06:53:49.887Z vite:hmr (client) [no modules matched] [2msrc/main.js[22m
+2025-10-16T06:53:49.887Z vite:hmr (ssr) [no modules matched] [2msrc/main.js[22m
+2025-10-16T06:53:49.888Z vite:hmr [file change] [2msrc/router/index.js[22m
+2025-10-16T06:53:49.888Z vite:hmr (client) [no modules matched] [2msrc/router/index.js[22m
+2025-10-16T06:53:49.889Z vite:hmr (ssr) [no modules matched] [2msrc/router/index.js[22m
+2025-10-16T06:53:49.890Z vite:hmr [file change] [2msrc/Components/Menu.vue[22m
+2025-10-16T06:53:49.897Z vite:hmr (client) [no modules matched] [2msrc/Components/Menu.vue[22m
+2025-10-16T06:53:49.897Z vite:hmr (ssr) [no modules matched] [2msrc/Components/Menu.vue[22m
+2025-10-16T06:53:49.916Z vite:hmr [file change] [2msrc/Components/Reservation/Reservation.vue[22m
+2025-10-16T06:53:49.917Z vite:hmr (client) [no modules matched] [2msrc/Components/Reservation/Reservation.vue[22m
+2025-10-16T06:53:49.917Z vite:hmr (ssr) [no modules matched] [2msrc/Components/Reservation/Reservation.vue[22m
+2025-10-16T06:53:49.917Z vite:hmr [file change] [2mvite_log.txt[22m
+2025-10-16T06:53:49.917Z vite:hmr (client) [no modules matched] [2mvite_log.txt[22m
+2025-10-16T06:53:49.917Z vite:hmr (ssr) [no modules matched] [2mvite_log.txt[22m
+2025-10-16T06:53:49.932Z vite:hmr [file change] [2msrc/Components/AboutUs.vue[22m
+2025-10-16T06:53:49.932Z vite:hmr (client) [no modules matched] [2msrc/Components/AboutUs.vue[22m
+2025-10-16T06:53:49.932Z vite:hmr (ssr) [no modules matched] [2msrc/Components/AboutUs.vue[22m
+^C
