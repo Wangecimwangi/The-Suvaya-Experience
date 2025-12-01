@@ -1,12 +1,12 @@
 # The Suvaya Experience - Complete Setup Guide
 
-## 🚀 Quick Start Guide
+##  Quick Start Guide
 
 This guide will help you set up the complete system (Frontend + Backend) for The Suvaya Experience.
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 Before you begin, ensure you have:
 
@@ -17,7 +17,7 @@ Before you begin, ensure you have:
 
 ---
 
-## 🎯 Step-by-Step Installation
+##  Step-by-Step Installation
 
 ### Step 1: Frontend Setup
 
@@ -106,7 +106,7 @@ const API_BASE_URL = 'http://localhost/suvaya-backend/api';
 
 ---
 
-## 🧪 Testing the System
+##  Testing the System
 
 ### 1. Test Login (Admin)
 
@@ -203,7 +203,7 @@ http://localhost/suvaya-backend/api
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Frontend Issues
 
@@ -247,7 +247,7 @@ npm install
 
 ---
 
-## 📊 Database Tables
+## Database Tables
 
 The system includes these tables:
 - `users` - User accounts
@@ -263,7 +263,7 @@ The system includes these tables:
 
 ---
 
-## 🔐 Security Recommendations
+## Security Recommendations
 
 For production deployment:
 
@@ -290,7 +290,7 @@ If you encounter any issues:
 
 ---
 
-## 🎉 Success!
+##  Success!
 
 If everything is working:
 - ✅ Frontend: `http://localhost:5174`
