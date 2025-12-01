@@ -1,8 +1,16 @@
 <script setup>
 import { ref } from 'vue'
-const isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'))
-const isAdmin = true
+import { useAuthStore } from '@/stores/auth'
+import { useRouter } from 'vue-router'
+
+const authStore = useAuthStore()
+const router = useRouter()
 const drawer = ref(false)
+
+function handleLogout() {
+  authStore.logout()
+  router.push('/login')
+}
 </script>
 
 <template>
@@ -23,13 +31,42 @@ const drawer = ref(false)
       <v-btn to="/events" variant="text" class="mx-1">Events</v-btn>
       <v-btn to="/aboutus" variant="text" class="mx-1">About</v-btn>
       <v-btn to="/contactus" variant="text" class="mx-1">Contact</v-btn>
-      <v-btn to="/orders" variant="text" class="mx-1" v-if="isLoggedIn">Orders</v-btn>
-      <v-btn to="/admin" variant="text" class="mx-1" v-if="isAdmin">Admin</v-btn>
-      <v-btn to="/userprofile" icon variant="text" class="mx-1" v-if="isLoggedIn">
-        <v-icon>mdi-account-circle</v-icon>
-      </v-btn>
-      <v-btn to="/login" variant="text" class="mx-1" v-if="!isLoggedIn">Login</v-btn>
-      <v-btn to="/signup" variant="outlined" class="mx-1" v-if="!isLoggedIn">Sign Up</v-btn>
+
+      <!-- Logged In User Menu -->
+      <template v-if="authStore.isLoggedIn">
+        <v-btn to="/orders" variant="text" class="mx-1">Orders</v-btn>
+        <v-btn to="/admin" variant="text" class="mx-1" v-if="authStore.isAdmin">Admin</v-btn>
+
+        <v-menu>
+          <template v-slot:activator="{ props }">
+            <v-btn icon variant="text" class="mx-1" v-bind="props">
+              <v-icon>mdi-account-circle</v-icon>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item>
+              <v-list-item-title class="font-weight-bold">{{ authStore.user?.name }}</v-list-item-title>
+              <v-list-item-subtitle>{{ authStore.user?.email }}</v-list-item-subtitle>
+            </v-list-item>
+            <v-divider></v-divider>
+            <v-list-item to="/userprofile" prepend-icon="mdi-account">
+              <v-list-item-title>Profile</v-list-item-title>
+            </v-list-item>
+            <v-list-item to="/orders" prepend-icon="mdi-receipt">
+              <v-list-item-title>My Orders</v-list-item-title>
+            </v-list-item>
+            <v-list-item @click="handleLogout" prepend-icon="mdi-logout">
+              <v-list-item-title>Logout</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </template>
+
+      <!-- Not Logged In -->
+      <template v-else>
+        <v-btn to="/login" variant="text" class="mx-1">Login</v-btn>
+        <v-btn to="/signup" variant="outlined" class="mx-1">Sign Up</v-btn>
+      </template>
     </div>
 
     <!-- Mobile Menu Button -->
@@ -48,19 +85,38 @@ const drawer = ref(false)
     class="mobile-drawer"
   >
     <v-list density="compact" nav>
+      <!-- User Info (if logged in) -->
+      <template v-if="authStore.isLoggedIn">
+        <v-list-item class="py-3">
+          <v-list-item-title class="font-weight-bold">{{ authStore.user?.name }}</v-list-item-title>
+          <v-list-item-subtitle class="text-caption">{{ authStore.user?.email }}</v-list-item-subtitle>
+        </v-list-item>
+        <v-divider class="mb-2"></v-divider>
+      </template>
+
+      <!-- Main Navigation -->
       <v-list-item prepend-icon="mdi-home" title="Home" to="/" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-silverware-fork-knife" title="Menu" to="/menu" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-calendar-check" title="Reservation" to="/reservation" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-party-popper" title="Events" to="/events" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-information" title="About Us" to="/aboutus" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-email" title="Contact Us" to="/contactus" @click="drawer = false"></v-list-item>
-      <v-divider class="my-2" v-if="isLoggedIn || isAdmin"></v-divider>
-      <v-list-item prepend-icon="mdi-receipt" title="My Orders" to="/orders" @click="drawer = false" v-if="isLoggedIn"></v-list-item>
-      <v-list-item prepend-icon="mdi-shield-account" title="Admin" to="/admin" @click="drawer = false" v-if="isAdmin"></v-list-item>
-      <v-list-item prepend-icon="mdi-account-circle" title="Profile" to="/userprofile" @click="drawer = false" v-if="isLoggedIn"></v-list-item>
-      <v-divider class="my-2"></v-divider>
-      <v-list-item prepend-icon="mdi-login" title="Login" to="/login" @click="drawer = false" v-if="!isLoggedIn"></v-list-item>
-      <v-list-item prepend-icon="mdi-account-plus" title="Sign Up" to="/signup" @click="drawer = false" v-if="!isLoggedIn"></v-list-item>
+
+      <!-- Logged In Options -->
+      <template v-if="authStore.isLoggedIn">
+        <v-divider class="my-2"></v-divider>
+        <v-list-item prepend-icon="mdi-receipt" title="My Orders" to="/orders" @click="drawer = false"></v-list-item>
+        <v-list-item prepend-icon="mdi-shield-account" title="Admin" to="/admin" @click="drawer = false" v-if="authStore.isAdmin"></v-list-item>
+        <v-list-item prepend-icon="mdi-account-circle" title="Profile" to="/userprofile" @click="drawer = false"></v-list-item>
+        <v-list-item prepend-icon="mdi-logout" title="Logout" @click="handleLogout(); drawer = false"></v-list-item>
+      </template>
+
+      <!-- Not Logged In -->
+      <template v-else>
+        <v-divider class="my-2"></v-divider>
+        <v-list-item prepend-icon="mdi-login" title="Login" to="/login" @click="drawer = false"></v-list-item>
+        <v-list-item prepend-icon="mdi-account-plus" title="Sign Up" to="/signup" @click="drawer = false"></v-list-item>
+      </template>
     </v-list>
   </v-navigation-drawer>
 </template>

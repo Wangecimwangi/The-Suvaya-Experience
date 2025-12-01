@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { contactAPI } from '@/services/api'
 
 const form = ref({
   name: '',
@@ -9,16 +10,31 @@ const form = ref({
   message: ''
 })
 
-const submitForm = () => {
-  // Form submission logic would go here
-  alert('Thank you for contacting us! We will get back to you soon.')
-  // Reset form
-  form.value = {
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+const loading = ref(false)
+const showSnackbar = ref(false)
+const errorMessage = ref('')
+
+const submitForm = async () => {
+  loading.value = true
+  errorMessage.value = ''
+
+  try {
+    await contactAPI.sendMessage(form.value)
+
+    showSnackbar.value = true
+
+    // Reset form
+    form.value = {
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: ''
+    }
+  } catch (error) {
+    errorMessage.value = error.message || 'Failed to send message. Please try again.'
+  } finally {
+    loading.value = false
   }
 }
 </script>
@@ -85,15 +101,30 @@ const submitForm = () => {
               class="mb-4"
             ></v-textarea>
 
+            <v-alert
+              v-if="errorMessage"
+              type="error"
+              variant="tonal"
+              class="mb-4"
+            >
+              {{ errorMessage }}
+            </v-alert>
+
             <v-btn
               type="submit"
               color="amber-darken-2"
               size="large"
               block
+              :loading="loading"
             >
               Send Message
             </v-btn>
           </v-form>
+
+          <v-snackbar v-model="showSnackbar" color="success" :timeout="3000">
+            <v-icon class="mr-2">mdi-check-circle</v-icon>
+            Message sent successfully! We'll get back to you soon.
+          </v-snackbar>
         </v-card>
       </v-col>
 

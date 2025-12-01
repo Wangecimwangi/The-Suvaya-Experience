@@ -207,17 +207,18 @@ async function submitReservation() {
     return
   }
 
-  if (isDateBooked(date.value)) {
+  // Check if date is already booked
+  const dateBooked = await isDateBooked(date.value)
+  if (dateBooked) {
     alert('Sorry, that date is already booked. Pick another date.')
     return
   }
 
   loading.value = true
 
-  // Simulate API call
-  setTimeout(() => {
-    // persist booking (and record deposit placeholder)
-    addBooking(date.value, {
+  try {
+    // Send to backend API
+    await addBooking(date.value, {
       type: 'reservation',
       name: name.value,
       email: email.value,
@@ -225,10 +226,8 @@ async function submitReservation() {
       time: time.value,
       guests: guests.value,
       notes: notes.value,
-      depositRequired: true,
     })
 
-    loading.value = false
     showSnackbar.value = true
 
     // Reset form
@@ -244,7 +243,12 @@ async function submitReservation() {
       formRef.value.reset()
       formRef.value.resetValidation()
     }
-  }, 1000)
+  } catch (error) {
+    console.error('Reservation error:', error)
+    alert('Failed to create reservation. Please try again.')
+  } finally {
+    loading.value = false
+  }
 }
 </script>
 

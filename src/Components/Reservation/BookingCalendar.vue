@@ -109,12 +109,21 @@ const selectedDate = ref('')
 const showDialog = ref(false)
 const showSnackbar = ref(false)
 
-function allowedDates(date) {
-  return !isDateBooked(date)
+async function allowedDates(date) {
+  try {
+    const booked = await isDateBooked(date)
+    return !booked
+  } catch (error) {
+    return true // Allow date if check fails
+  }
 }
 
-function isBooked(date) {
-  return isDateBooked(date)
+async function isBooked(date) {
+  try {
+    return await isDateBooked(date)
+  } catch (error) {
+    return false
+  }
 }
 
 function onDateSelect(date) {
@@ -125,11 +134,16 @@ function bookDate() {
   showDialog.value = true
 }
 
-function payDeposit() {
-  addBooking(selectedDate.value, { source: 'calendar', deposit: true })
-  showDialog.value = false
-  showSnackbar.value = true
-  selectedDate.value = ''
+async function payDeposit() {
+  try {
+    await addBooking(selectedDate.value, { source: 'calendar', deposit: true })
+    showDialog.value = false
+    showSnackbar.value = true
+    selectedDate.value = ''
+  } catch (error) {
+    console.error('Booking error:', error)
+    alert('Failed to book date. Please try again.')
+  }
 }
 
 function formatDate(dateString) {
