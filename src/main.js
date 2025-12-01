@@ -12,14 +12,10 @@ import * as directives from 'vuetify/directives'
 import '@mdi/font/css/materialdesignicons.css'
 import * as labsComponent from 'vuetify/labs/components'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-
-
 const vuetify = createVuetify({
   components,
   directives,
-   icons: {
+  icons: {
     defaultSet: 'mdi', // This is already the default value - only for display purposes
   },
 })

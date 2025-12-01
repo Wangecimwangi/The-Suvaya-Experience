@@ -1,70 +1,85 @@
 <template>
-  <v-container class="py-8">
+  <v-container class="py-6 py-md-10">
     <v-row>
-      <v-col cols="12" class="text-center mb-6">
+      <v-col cols="12" class="text-center mb-4 mb-md-8">
         <h1 class="menu-title">Bakery Menu & Food Plans</h1>
-        <p class="menu-desc">Choose from our cakes (by kg), pastries, desserts, and special food plans. Book baking classes or order for your event. Pay half now, half on delivery!</p>
+        <p class="menu-desc px-2 px-md-0">Choose from our cakes (by kg), pastries, desserts, and special food plans. Book baking classes or order for your event. Pay half now, half on delivery!</p>
       </v-col>
     </v-row>
 
     <v-row>
       <v-col cols="12">
-        <v-tabs v-model="tab" color="amber-darken-2" align-tabs="center">
-          <v-tab v-for="(cat, idx) in categories" :key="idx">{{ cat }}</v-tab>
+        <v-tabs
+          v-model="tab"
+          color="amber-darken-2"
+          align-tabs="center"
+          show-arrows
+          class="menu-tabs"
+        >
+          <v-tab v-for="(cat, idx) in categories" :key="idx" class="text-capitalize">{{ cat }}</v-tab>
         </v-tabs>
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col v-for="item in filteredMenu" :key="item.id" cols="12" sm="6" md="3">
-        <v-card class="menu-card" elevation="6">
+    <v-row class="mt-4">
+      <v-col v-for="item in filteredMenu" :key="item.id" cols="12" sm="6" lg="4" xl="3">
+        <v-card class="menu-card" elevation="4" height="100%">
           <v-img :src="item.image" height="200px" cover></v-img>
-          <v-card-title class="text-h6">{{ item.name }}</v-card-title>
-          <v-card-subtitle>{{ item.category }}</v-card-subtitle>
 
-          <v-card-text>
-            <div v-if="item.kg">Available: {{ item.kg }} kg</div>
-            <div>{{ item.description }}</div>
+          <v-card-title class="text-h6 pb-2">{{ item.name }}</v-card-title>
+          <v-card-subtitle class="pb-3">{{ item.category }}</v-card-subtitle>
 
-            <div class="font-weight-bold mt-2">
-              <template v-if="item.price !== undefined && item.price !== null">
-                Ksh{{ item.price.toLocaleString() }} <span v-if="item.kg">/ {{ item.kg }}kg</span>
-              </template>
-              <template v-else>N/A</template>
+          <v-card-text class="flex-grow-1">
+            <div v-if="item.kg" class="mb-2">
+              <v-chip size="small" color="amber-lighten-4" class="text-caption">
+                Available: {{ item.kg }} kg
+              </v-chip>
             </div>
 
-            <div v-if="item.package">
-              <strong>Package Includes:</strong>
-              <ul>
+            <p class="text-body-2 mb-3">{{ item.description }}</p>
+
+            <div class="price-tag mb-3">
+              <template v-if="item.price !== undefined && item.price !== null">
+                <span class="text-h6 font-weight-bold">Ksh {{ item.price.toLocaleString() }}</span>
+                <span v-if="item.kg" class="text-caption ml-1">/ {{ item.kg }}kg</span>
+              </template>
+              <template v-else>
+                <span class="text-caption">Price N/A</span>
+              </template>
+            </div>
+
+            <div v-if="item.package" class="package-info mb-3">
+              <p class="text-subtitle-2 font-weight-bold mb-1">Package Includes:</p>
+              <ul class="text-caption pl-4">
                 <li v-for="inc in item.package.includes" :key="inc">{{ inc }}</li>
               </ul>
-              <div class="font-weight-bold">
+              <div class="deposit-info mt-2">
                 <template v-if="item.price !== undefined && item.price !== null">
-                  Deposit: Ksh{{ Math.round(item.price/2).toLocaleString() }} (50%)
+                  <v-chip size="small" color="green-lighten-4">
+                    Deposit: Ksh {{ Math.round(item.price/2).toLocaleString() }} (50%)
+                  </v-chip>
                 </template>
-                <template v-else>Deposit: N/A</template>
               </div>
             </div>
 
-            <div v-if="item.class">
-              <strong>Baking Class:</strong> {{ item.class.details }}<br />
-              <div class="font-weight-bold">
+            <div v-if="item.class" class="class-info mb-3">
+              <p class="text-subtitle-2 font-weight-bold mb-1">Baking Class</p>
+              <p class="text-caption mb-2">{{ item.class.details }}</p>
+              <div class="d-flex flex-column gap-1">
                 <template v-if="item.class && item.class.price !== undefined && item.class.price !== null">
-                  Fee: Ksh{{ item.class.price.toLocaleString() }}
+                  <div class="text-body-2 font-weight-bold">Fee: Ksh {{ item.class.price.toLocaleString() }}</div>
+                  <v-chip size="small" color="green-lighten-4">
+                    Deposit: Ksh {{ Math.round(item.class.price/2).toLocaleString() }} (50%)
+                  </v-chip>
                 </template>
-                <template v-else>Fee: N/A</template>
-              </div>
-              <div class="font-weight-bold">
-                <template v-if="item.class && item.class.price !== undefined && item.class.price !== null">
-                  Deposit: Ksh{{ Math.round(item.class.price/2).toLocaleString() }} (50%)
-                </template>
-                <template v-else>Deposit: N/A</template>
               </div>
             </div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn color="amber darken-2" variant="flat" @click="openPayDialog(item)">Pay Deposit</v-btn>
+          <v-card-actions class="pt-0">
+            <v-btn color="amber-darken-2" variant="flat" block @click="openPayDialog(item)">
+              Pay Deposit
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -137,27 +152,71 @@ const filteredMenu = computed(() => {
 <style scoped>
 .menu-title {
   color: #b28704;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+@media (min-width: 600px) {
+  .menu-title {
+    font-size: 2.2rem;
+  }
+}
+
 .menu-desc {
   color: #b28704;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
+
+@media (min-width: 600px) {
+  .menu-desc {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.menu-tabs {
+  margin-bottom: 1rem;
+}
+
 .menu-card {
-  border-radius: 18px;
+  border-radius: 16px;
   background: #fffbe6;
-  transition: box-shadow 0.2s;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
+
 .menu-card:hover {
-  box-shadow: 0 8px 24px #b2870440;
+  box-shadow: 0 8px 24px rgba(178, 135, 4, 0.25);
+  transform: translateY(-4px);
 }
-.v-card-title {
+
+.menu-card .v-card-title {
+  color: #b28704;
+  line-height: 1.3;
+}
+
+.menu-card .v-card-subtitle {
+  color: #7a7a7a;
+  font-size: 0.875rem;
+}
+
+.price-tag {
   color: #b28704;
 }
+
+.package-info,
+.class-info {
+  background: #fff8dc;
+  padding: 12px;
+  border-radius: 8px;
+}
+
 .v-btn {
   color: white;
+  text-transform: none;
 }
 </style>
