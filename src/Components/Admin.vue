@@ -79,6 +79,7 @@ const menuHeaders = [
   { title: 'Name', key: 'name' },
   { title: 'Category', key: 'category' },
   { title: 'Price', key: 'price' },
+  { title: 'Stock', key: 'stock_quantity', width: '100px' },
   { title: 'Available', key: 'is_available', width: '100px' },
   { title: 'Actions', key: 'actions', sortable: false, width: '120px' }
 ]
@@ -287,6 +288,7 @@ function addMenuItem() {
     description: '',
     category: 'cakes',
     price: 0,
+    stock_quantity: 0,
     is_available: true
   }
   showMenuDialog.value = true
@@ -726,6 +728,15 @@ onMounted(() => {
                 {{ formatCurrency(item.price) }}
               </template>
 
+              <template v-slot:item.stock_quantity="{ item }">
+                <v-chip
+                  :color="(item.stock_quantity || 0) > 10 ? 'green' : (item.stock_quantity || 0) > 0 ? 'orange' : 'red'"
+                  size="small"
+                >
+                  {{ item.stock_quantity || 0 }}
+                </v-chip>
+              </template>
+
               <template v-slot:item.is_available="{ item }">
                 <v-chip :color="item.is_available ? 'green' : 'red'" size="small">
                   {{ item.is_available ? 'Available' : 'Unavailable' }}
@@ -994,9 +1005,20 @@ onMounted(() => {
             class="mb-2"
           ></v-text-field>
 
+          <v-text-field
+            v-model.number="editingItem.stock_quantity"
+            label="Stock Quantity"
+            type="number"
+            variant="outlined"
+            color="amber-darken-2"
+            hint="Enter 0 for unlimited/made-to-order items"
+            persistent-hint
+            class="mb-4"
+          ></v-text-field>
+
           <v-switch
             v-model="editingItem.is_available"
-            label="Available"
+            label="Available for Purchase"
             color="amber-darken-2"
           ></v-switch>
         </v-card-text>

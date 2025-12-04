@@ -1,6 +1,5 @@
 <script setup>
 import ReservationForm from './ReservationForm.vue'
-import BookingCalendar from './BookingCalendar.vue'
 </script>
 
 <template>
@@ -14,14 +13,9 @@ import BookingCalendar from './BookingCalendar.vue'
         </v-row>
 
         <!-- Main Content -->
-        <v-row>
-            <!-- Calendar Section -->
-            <v-col cols="12" lg="6" class="mb-6 mb-lg-0">
-                <BookingCalendar />
-            </v-col>
-
-            <!-- Form Section -->
-            <v-col cols="12" lg="6">
+        <v-row justify="center">
+            <!-- Form Section (Full Width) -->
+            <v-col cols="12" lg="8">
                 <ReservationForm />
             </v-col>
         </v-row>

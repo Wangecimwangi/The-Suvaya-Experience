@@ -30,8 +30,8 @@ class MpesaConfig {
     private $production_base_url = 'https://api.safaricom.co.ke';
 
     // Callback URLs (update these to your actual server URLs)
-    private $callback_url = 'http://localhost:8000/backend/api/mpesa/callback.php';
-    private $timeout_url = 'http://localhost:8000/backend/api/mpesa/timeout.php';
+    private $callback_url = 'http://localhost:8000/api/mpesa/callback.php';
+    private $timeout_url = 'http://localhost:8000/api/mpesa/timeout.php';
 
     public function getConsumerKey() {
         return $this->environment === 'sandbox'
