@@ -35,6 +35,8 @@ export const reservationsAPI = {
   getAll: () => apiCall('/reservations/get.php'),
   getById: (id) => apiCall(`/reservations/get.php?id=${id}`),
   checkDate: (date) => apiCall(`/reservations/check-date.php?date=${date}`),
+  updateStatus: (id, status) => apiCall('/reservations/update-status.php', 'POST', { id, status }),
+  delete: (id) => apiCall('/reservations/delete.php', 'POST', { id }),
 };
 
 // Menu API
@@ -45,6 +47,8 @@ export const menuAPI = {
   },
   getById: (id) => apiCall(`/menu/get.php?id=${id}`),
   create: (data) => apiCall('/menu/create.php', 'POST', data),
+  update: (id, data) => apiCall('/menu/update.php', 'POST', { id, ...data }),
+  delete: (id) => apiCall('/menu/delete.php', 'POST', { id }),
 };
 
 // Orders API
@@ -53,6 +57,8 @@ export const ordersAPI = {
   getAll: () => apiCall('/orders/get.php'),
   getById: (id) => apiCall(`/orders/get.php?id=${id}`),
   getByOrderNumber: (orderNumber) => apiCall(`/orders/get.php?order_number=${orderNumber}`),
+  updateStatus: (id, status) => apiCall('/orders/update-status.php', 'POST', { id, status }),
+  delete: (id) => apiCall('/orders/delete.php', 'POST', { id }),
 };
 
 // Events API
@@ -64,6 +70,9 @@ export const eventsAPI = {
     return apiCall(url);
   },
   getById: (id) => apiCall(`/events/get.php?id=${id}`),
+  create: (data) => apiCall('/events/create.php', 'POST', data),
+  update: (id, data) => apiCall('/events/update.php', 'POST', { id, ...data }),
+  delete: (id) => apiCall('/events/delete.php', 'POST', { id }),
 };
 
 // Authentication API
@@ -76,6 +85,8 @@ export const authAPI = {
 // Contact API
 export const contactAPI = {
   sendMessage: (data) => apiCall('/contact/create.php', 'POST', data),
+  getAll: () => apiCall('/contact/get.php'),
+  markAsRead: (id) => apiCall('/contact/mark-read.php', 'POST', { id }),
 };
 
 // Storage helpers for authentication
