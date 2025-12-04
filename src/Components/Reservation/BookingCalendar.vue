@@ -102,12 +102,20 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { isDateBooked, addBooking } from '@/api/bookings'
+import MpesaPayment from '@/Components/Payment/MpesaPayment.vue'
 
 const selectedDate = ref('')
 const showDialog = ref(false)
+const showPaymentDialog = ref(false)
 const showSnackbar = ref(false)
+const depositAmount = ref(2500) // Default deposit amount
+
+const paymentReference = computed(() => {
+  if (!selectedDate.value) return ''
+  return `BOOKING-${new Date(selectedDate.value).getTime()}`
+})
 
 async function allowedDates(date) {
   try {
