@@ -168,7 +168,10 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
 import { isDateBooked, addBooking } from '@/api/bookings'
+
+const router = useRouter()
 
 const name = ref('')
 const email = ref('')
@@ -228,21 +231,23 @@ async function submitReservation() {
       notes: notes.value,
     })
 
-    showSnackbar.value = true
-
-    // Reset form
-    name.value = ''
-    email.value = ''
-    phone.value = ''
-    date.value = null
-    time.value = ''
-    guests.value = 1
-    notes.value = ''
-
-    if (formRef.value) {
-      formRef.value.reset()
-      formRef.value.resetValidation()
+    // Save reservation data to pass to success page
+    const reservationData = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      date: date.value,
+      time: time.value,
+      guests: guests.value,
+      notes: notes.value,
+      deposit_paid: false
     }
+
+    localStorage.setItem('lastReservation', JSON.stringify(reservationData))
+
+    // Redirect to success page
+    router.push('/reservation-success')
+
   } catch (error) {
     console.error('Reservation error:', error)
     alert('Failed to create reservation. Please try again.')

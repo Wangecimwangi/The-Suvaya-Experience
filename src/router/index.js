@@ -10,6 +10,13 @@ import UserProfile from '@/Components/UserProfile.vue'
 import Admin from '@/Components/Admin.vue'
 import AboutUs from '@/Components/AboutUs.vue'
 import Events from '@/Components/Events.vue'
+import ReservationSuccess from '@/Components/ReservationSuccess.vue'
+import MyReservations from '@/Components/MyReservations.vue'
+import Shop from '@/Components/Shop.vue'
+import Cart from '@/Components/Cart.vue'
+import Checkout from '@/Components/Checkout.vue'
+import OrderSuccess from '@/Components/OrderSuccess.vue'
+import MyOrders from '@/Components/MyOrders.vue'
 
 
 const router = createRouter({
@@ -65,6 +72,41 @@ const router = createRouter({
     {name: 'Admin',
       path: '/Admin',
       component: Admin
+    },
+    {
+      name: 'reservation-success',
+      path: '/reservation-success',
+      component: ReservationSuccess
+    },
+    {
+      name: 'my-reservations',
+      path: '/my-reservations',
+      component: MyReservations
+    },
+    {
+      name: 'shop',
+      path: '/shop',
+      component: Shop
+    },
+    {
+      name: 'cart',
+      path: '/cart',
+      component: Cart
+    },
+    {
+      name: 'checkout',
+      path: '/checkout',
+      component: Checkout
+    },
+    {
+      name: 'order-success',
+      path: '/order-success',
+      component: OrderSuccess
+    },
+    {
+      name: 'my-orders',
+      path: '/my-orders',
+      component: MyOrders
     },
   ],
 })

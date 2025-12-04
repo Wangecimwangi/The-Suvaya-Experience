@@ -4,6 +4,17 @@
       <v-col cols="12" class="text-center mb-4 mb-md-8">
         <h1 class="menu-title">Bakery Menu & Food Plans</h1>
         <p class="menu-desc px-2 px-md-0">Choose from our cakes (by kg), pastries, desserts, and special food plans. Book baking classes or order for your event. Pay half now, half on delivery!</p>
+
+        <!-- Shop CTA -->
+        <v-btn
+          color="amber-darken-2"
+          size="large"
+          to="/shop"
+          prepend-icon="mdi-cart"
+          class="mt-4"
+        >
+          Start Shopping & Add to Cart
+        </v-btn>
       </v-col>
     </v-row>
 

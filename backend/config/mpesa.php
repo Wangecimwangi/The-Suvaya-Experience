@@ -14,10 +14,10 @@ class MpesaConfig {
     private $environment = 'sandbox';
 
     // Sandbox Credentials (for testing)
-    private $sandbox_consumer_key = 'YOUR_SANDBOX_CONSUMER_KEY';
-    private $sandbox_consumer_secret = 'YOUR_SANDBOX_CONSUMER_SECRET';
+    private $sandbox_consumer_key = 'VcORe1bpTxizseT8OGdiMgAKXWXZepTzPNHnb97g0DbcHm3V';
+    private $sandbox_consumer_secret = '2aTxm3K9fhfgmTx9YZjCSm7dvCce6oGVjJVxtzcZY51dZ9Cazg7O99nFvuBrF2Em';
     private $sandbox_shortcode = '174379'; // Sandbox shortcode
-    private $sandbox_passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'; // Sandbox passkey
+    private $sandbox_passkey = 'gBj6wcqXIMJ1dJP7XKkNg7W+aQ/JlZOnFEhfJYBglgj1CMHpDeyrKbcVfanCbMw9GNt2tqubRyek7FAyX/1j87/gUZ7di+ZBkPF5fJPgfTLthOXlAT3uAw75g4Dw/qdDmlvRCLprsiJZyJhx1P9te58I4Nkn/VmfPEx9FefCodzMSY5q8XrTuhpfHm2+6CeGl/j8XGYgjcPh82X50pig5Dr+nt/MKyI7UHFopA8w3PfD6x8knOv0iT+Fzv+qPkwu6qI7+aBw4bHsLby/59vXhBjzh9I1nqhZ6h+ZthKgJ0IJGaDuGKmmrxJX2iWcR1LimWdTAfLvU+mhclu8ziCFqA=='; // Sandbox passkey
 
     // Production Credentials (for live)
     private $production_consumer_key = 'YOUR_PRODUCTION_CONSUMER_KEY';

@@ -1,9 +1,11 @@
 <script setup>
 import { ref } from 'vue'
 import { useAuthStore } from '@/stores/auth'
+import { useCartStore } from '@/stores/cart'
 import { useRouter } from 'vue-router'
 
 const authStore = useAuthStore()
+const cartStore = useCartStore()
 const router = useRouter()
 const drawer = ref(false)
 
@@ -32,9 +34,20 @@ function handleLogout() {
       <v-btn to="/aboutus" variant="text" class="mx-1">About</v-btn>
       <v-btn to="/contactus" variant="text" class="mx-1">Contact</v-btn>
 
+      <!-- Shopping Cart -->
+      <v-btn icon variant="text" class="mx-1" to="/cart">
+        <v-badge
+          :content="cartStore.itemCount"
+          :model-value="cartStore.itemCount > 0"
+          color="red"
+          overlap
+        >
+          <v-icon>mdi-cart</v-icon>
+        </v-badge>
+      </v-btn>
+
       <!-- Logged In User Menu -->
       <template v-if="authStore.isLoggedIn">
-        <v-btn to="/orders" variant="text" class="mx-1">Orders</v-btn>
         <v-btn to="/admin" variant="text" class="mx-1" v-if="authStore.isAdmin">Admin</v-btn>
 
         <v-menu>
@@ -51,6 +64,9 @@ function handleLogout() {
             <v-divider></v-divider>
             <v-list-item to="/userprofile" prepend-icon="mdi-account">
               <v-list-item-title>Profile</v-list-item-title>
+            </v-list-item>
+            <v-list-item to="/my-reservations" prepend-icon="mdi-calendar-multiple">
+              <v-list-item-title>My Reservations</v-list-item-title>
             </v-list-item>
             <v-list-item to="/orders" prepend-icon="mdi-receipt">
               <v-list-item-title>My Orders</v-list-item-title>
@@ -102,9 +118,27 @@ function handleLogout() {
       <v-list-item prepend-icon="mdi-information" title="About Us" to="/aboutus" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-email" title="Contact Us" to="/contactus" @click="drawer = false"></v-list-item>
 
+      <v-divider class="my-2"></v-divider>
+
+      <!-- Shopping Cart -->
+      <v-list-item to="/cart" @click="drawer = false">
+        <template v-slot:prepend>
+          <v-badge
+            :content="cartStore.itemCount"
+            :model-value="cartStore.itemCount > 0"
+            color="red"
+            overlap
+          >
+            <v-icon>mdi-cart</v-icon>
+          </v-badge>
+        </template>
+        <v-list-item-title>Shopping Cart</v-list-item-title>
+      </v-list-item>
+
       <!-- Logged In Options -->
       <template v-if="authStore.isLoggedIn">
         <v-divider class="my-2"></v-divider>
+        <v-list-item prepend-icon="mdi-calendar-multiple" title="My Reservations" to="/my-reservations" @click="drawer = false"></v-list-item>
         <v-list-item prepend-icon="mdi-receipt" title="My Orders" to="/orders" @click="drawer = false"></v-list-item>
         <v-list-item prepend-icon="mdi-shield-account" title="Admin" to="/admin" @click="drawer = false" v-if="authStore.isAdmin"></v-list-item>
         <v-list-item prepend-icon="mdi-account-circle" title="Profile" to="/userprofile" @click="drawer = false"></v-list-item>
