@@ -2,17 +2,36 @@
 /**
  * Email Utility Class
  *
- * Handles sending emails using PHP's mail() function
- * For production, consider using PHPMailer or similar library with SMTP
+ * Handles sending emails using SMTP
  */
 
+require_once __DIR__ . '/../lib/SimpleMailer.php';
+
 class EmailService {
+    private $mailer;
     private $fromEmail;
     private $fromName;
+    private $config;
 
     public function __construct() {
-        $this->fromEmail = 'noreply@suvaya.com';
-        $this->fromName = 'The Suvaya Experience';
+        // Load email configuration
+        $this->config = require __DIR__ . '/../config/email.php';
+
+        $this->fromEmail = $this->config['from']['email'];
+        $this->fromName = $this->config['from']['name'];
+
+        // Initialize mailer with config
+        $smtpConfig = [
+            'host' => $this->config['smtp']['host'],
+            'port' => $this->config['smtp']['port'],
+            'username' => $this->config['smtp']['username'],
+            'password' => $this->config['smtp']['password'],
+            'from_email' => $this->fromEmail,
+            'from_name' => $this->fromName,
+            'use_tls' => $this->config['smtp']['use_tls']
+        ];
+
+        $this->mailer = new SimpleMailer($smtpConfig);
     }
 
     /**
@@ -40,23 +59,20 @@ class EmailService {
             include $templatePath;
 
             // Get email body
-            $body = ob_get_clean();
+            $htmlBody = ob_get_clean();
 
-            // Set headers for HTML email
-            $headers = "MIME-Version: 1.0\r\n";
-            $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-            $headers .= "From: {$this->fromName} <{$this->fromEmail}>\r\n";
-            $headers .= "Reply-To: {$this->fromEmail}\r\n";
-            $headers .= "X-Mailer: PHP/" . phpversion();
+            // Log email details
+            error_log("Sending email to: $to, Subject: $subject");
 
-            // Send email
-            $success = mail($to, $subject, $body, $headers);
+            // Send email using SimpleMailer
+            $success = $this->mailer->send($to, $subject, $htmlBody);
 
             if (!$success) {
                 error_log("Failed to send email to: $to, Subject: $subject");
                 return false;
             }
 
+            error_log("Email sent successfully to: $to");
             return true;
 
         } catch (Exception $e) {

@@ -33,9 +33,15 @@ const deliveryAddress = ref('')
 const deliveryDate = ref(null)
 const deliveryTime = ref('')
 const deliveryMethod = ref('delivery') // delivery or pickup
-const paymentMethod = ref('mpesa') // mpesa or cash
+const paymentMethod = ref('card') // card, mpesa_manual, or cash
 const specialInstructions = ref('')
 const dateMenu = ref(false)
+const showCardDialog = ref(false)
+const cardNumber = ref('')
+const cardName = ref('')
+const cardExpiry = ref('')
+const cardCVV = ref('')
+const processingPayment = ref(false)
 
 const formattedDeliveryDate = computed(() => {
   if (!deliveryDate.value) return ''
@@ -55,20 +61,21 @@ function formatPrice(price) {
   }).format(price)
 }
 
-async function submitOrder() {
-  if (!formRef.value) return
+async function processCardPayment() {
+  processingPayment.value = true
 
-  const { valid } = await formRef.value.validate()
+  // Simulate card payment processing (2 seconds)
+  await new Promise(resolve => setTimeout(resolve, 2000))
 
-  if (!valid) {
-    return
-  }
+  // Simulate success (in production, integrate real payment gateway)
+  processingPayment.value = false
+  showCardDialog.value = false
 
-  if (!deliveryDate.value) {
-    alert('Please select a delivery date')
-    return
-  }
+  // Proceed to place order
+  await placeOrder()
+}
 
+async function placeOrder() {
   loading.value = true
 
   try {
@@ -95,16 +102,9 @@ async function submitOrder() {
     // Save order data for success page
     localStorage.setItem('lastOrder', JSON.stringify({
       ...orderData,
-      order_id: response.data.order_id || 'ORD-' + Date.now(),
+      order_id: response.data.order_number || 'ORD-' + Date.now(),
       created_at: new Date().toISOString()
     }))
-
-    // If M-Pesa payment, initiate STK push
-    if (paymentMethod.value === 'mpesa') {
-      // TODO: Integrate M-Pesa STK Push
-      // For now, just proceed to success page
-      console.log('M-Pesa payment will be initiated')
-    }
 
     // Clear cart
     cartStore.clearCart()
@@ -118,6 +118,30 @@ async function submitOrder() {
   } finally {
     loading.value = false
   }
+}
+
+async function submitOrder() {
+  if (!formRef.value) return
+
+  const { valid } = await formRef.value.validate()
+
+  if (!valid) {
+    return
+  }
+
+  if (!deliveryDate.value) {
+    alert('Please select a delivery date')
+    return
+  }
+
+  // If card payment, show card dialog
+  if (paymentMethod.value === 'card') {
+    showCardDialog.value = true
+    return
+  }
+
+  // For other payment methods, place order directly
+  await placeOrder()
 }
 
 function goBack() {
@@ -276,31 +300,67 @@ function goBack() {
             </v-card-title>
             <v-card-text class="px-4 px-md-6">
               <v-radio-group v-model="paymentMethod">
-                <v-radio color="amber-darken-2" value="mpesa">
+                <!-- Card Payment -->
+                <v-radio color="amber-darken-2" value="card">
                   <template v-slot:label>
                     <div class="d-flex align-center">
-                      <v-icon color="green" class="mr-2">mdi-cellphone</v-icon>
+                      <v-icon color="blue" class="mr-2">mdi-credit-card</v-icon>
                       <div>
-                        <div class="font-weight-bold">M-Pesa (Recommended)</div>
-                        <div class="text-caption text-grey">Pay deposit now via M-Pesa STK Push</div>
+                        <div class="font-weight-bold">Card Payment (Recommended)</div>
+                        <div class="text-caption text-grey">Pay securely with Visa, Mastercard, or Amex</div>
                       </div>
                     </div>
                   </template>
                 </v-radio>
 
+                <!-- M-Pesa Manual -->
+                <v-radio color="amber-darken-2" value="mpesa_manual">
+                  <template v-slot:label>
+                    <div class="d-flex align-center">
+                      <v-icon color="green" class="mr-2">mdi-cellphone</v-icon>
+                      <div>
+                        <div class="font-weight-bold">M-Pesa (Manual Payment)</div>
+                        <div class="text-caption text-grey">Pay via M-Pesa to our Till Number</div>
+                      </div>
+                    </div>
+                  </template>
+                </v-radio>
+
+                <!-- Cash on Delivery -->
                 <v-radio color="amber-darken-2" value="cash">
                   <template v-slot:label>
                     <div class="d-flex align-center">
                       <v-icon color="amber-darken-2" class="mr-2">mdi-cash</v-icon>
                       <div>
                         <div class="font-weight-bold">Cash on Delivery/Pickup</div>
-                        <div class="text-caption text-grey">Pay deposit when order is ready</div>
+                        <div class="text-caption text-grey">Pay when you receive your order</div>
                       </div>
                     </div>
                   </template>
                 </v-radio>
               </v-radio-group>
 
+              <!-- M-Pesa Till Number Alert -->
+              <v-alert
+                v-if="paymentMethod === 'mpesa_manual'"
+                type="info"
+                variant="tonal"
+                class="mt-4"
+              >
+                <div class="text-body-2">
+                  <strong>📱 M-Pesa Payment Instructions:</strong><br>
+                  1. Go to M-Pesa menu<br>
+                  2. Select "Lipa na M-Pesa"<br>
+                  3. Select "Buy Goods and Services"<br>
+                  4. Enter Till Number: <strong class="text-h6 text-green">5858585</strong><br>
+                  5. Enter Amount: <strong>{{ formatPrice(cartStore.deposit) }}</strong><br>
+                  6. Enter your M-Pesa PIN<br>
+                  7. You will receive a confirmation SMS<br><br>
+                  <em>Note: Your order will be confirmed once we verify payment.</em>
+                </div>
+              </v-alert>
+
+              <!-- Payment Info -->
               <v-alert
                 type="info"
                 variant="tonal"
@@ -410,6 +470,97 @@ function goBack() {
         </v-col>
       </v-row>
     </v-form>
+
+    <!-- Card Payment Dialog -->
+    <v-dialog v-model="showCardDialog" max-width="500" persistent>
+      <v-card class="card-payment-dialog">
+        <v-card-title class="payment-dialog-title">
+          <v-icon color="blue" class="mr-2">mdi-credit-card</v-icon>
+          Card Payment
+        </v-card-title>
+
+        <v-card-text class="px-6 pt-4">
+          <v-alert type="info" variant="tonal" class="mb-4" density="compact">
+            <div class="text-caption">
+              <strong>Test Mode:</strong> Use any card details for testing. In production, real payment gateway will be integrated.
+            </div>
+          </v-alert>
+
+          <v-text-field
+            v-model="cardNumber"
+            label="Card Number"
+            placeholder="4111 1111 1111 1111"
+            variant="outlined"
+            color="blue"
+            prepend-inner-icon="mdi-credit-card"
+            maxlength="19"
+            class="mb-3"
+          ></v-text-field>
+
+          <v-text-field
+            v-model="cardName"
+            label="Cardholder Name"
+            placeholder="JOHN DOE"
+            variant="outlined"
+            color="blue"
+            prepend-inner-icon="mdi-account"
+            class="mb-3"
+          ></v-text-field>
+
+          <v-row>
+            <v-col cols="6">
+              <v-text-field
+                v-model="cardExpiry"
+                label="Expiry"
+                placeholder="MM/YY"
+                variant="outlined"
+                color="blue"
+                prepend-inner-icon="mdi-calendar"
+                maxlength="5"
+              ></v-text-field>
+            </v-col>
+            <v-col cols="6">
+              <v-text-field
+                v-model="cardCVV"
+                label="CVV"
+                placeholder="123"
+                variant="outlined"
+                color="blue"
+                prepend-inner-icon="mdi-lock"
+                maxlength="3"
+                type="password"
+              ></v-text-field>
+            </v-col>
+          </v-row>
+
+          <v-alert type="success" variant="tonal" class="mt-3">
+            <div class="text-caption">
+              <strong>Amount to Pay:</strong> {{ formatPrice(cartStore.deposit) }}
+            </div>
+          </v-alert>
+        </v-card-text>
+
+        <v-card-actions class="px-6 pb-4">
+          <v-btn
+            variant="outlined"
+            color="grey"
+            @click="showCardDialog = false"
+            :disabled="processingPayment"
+          >
+            Cancel
+          </v-btn>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="blue"
+            @click="processCardPayment"
+            :loading="processingPayment"
+            prepend-icon="mdi-lock-check"
+          >
+            Pay {{ formatPrice(cartStore.deposit) }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-container>
 </template>
 
@@ -508,5 +659,18 @@ function goBack() {
   .page-subtitle {
     margin-left: 0;
   }
+}
+
+/* Card Payment Dialog */
+.card-payment-dialog {
+  border-radius: 16px;
+}
+
+.payment-dialog-title {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 20px 24px;
 }
 </style>

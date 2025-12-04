@@ -89,12 +89,6 @@ export const contactAPI = {
   markAsRead: (id) => apiCall('/contact/mark-read.php', 'POST', { id }),
 };
 
-// M-Pesa API
-export const mpesaAPI = {
-  initiatePayment: (data) => apiCall('/mpesa/stk-push.php', 'POST', data),
-  queryStatus: (checkoutRequestId) => apiCall(`/mpesa/query-status.php?checkout_request_id=${checkoutRequestId}`),
-};
-
 // Storage helpers for authentication
 export const authStorage = {
   setUser: (user) => localStorage.setItem('user', JSON.stringify(user)),
