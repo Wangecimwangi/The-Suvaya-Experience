@@ -221,6 +221,37 @@ function printReceipt() {
           </v-row>
         </v-card>
 
+        <!-- Package Recommendation CTA -->
+        <v-card class="package-cta-card mt-4" elevation="3">
+          <v-card-text class="pa-4 pa-md-6">
+            <v-row align="center">
+              <v-col cols="12" md="8">
+                <div class="d-flex align-center mb-2">
+                  <v-icon color="amber-darken-2" size="40" class="mr-3">mdi-lightbulb-on</v-icon>
+                  <div>
+                    <h3 class="cta-title">Need Items for Your Event?</h3>
+                    <p class="cta-subtitle mb-0">Get personalized package recommendations</p>
+                  </div>
+                </div>
+                <p class="cta-description mb-0">
+                  Let our smart recommendation system suggest the perfect packages for your event.
+                </p>
+              </v-col>
+              <v-col cols="12" md="4" class="text-center text-md-right">
+                <v-btn
+                  to="/package-recommendation"
+                  color="amber-darken-2"
+                  size="large"
+                  prepend-icon="mdi-wizard-hat"
+                  block
+                >
+                  Get Recommendations
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-card-text>
+        </v-card>
+
         <!-- Contact Support -->
         <v-card class="mt-4 pa-4" elevation="2">
           <div class="text-center">
@@ -294,8 +325,50 @@ function printReceipt() {
 @media print {
   .v-btn,
   .whats-next,
-  .v-timeline {
+  .v-timeline,
+  .package-cta-card {
     display: none !important;
+  }
+}
+
+.package-cta-card {
+  background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+  border-radius: 16px;
+  border: 2px solid #b28704;
+}
+
+.cta-title {
+  color: #b28704;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+@media (min-width: 960px) {
+  .cta-title {
+    font-size: 1.3rem;
+  }
+}
+
+.cta-subtitle {
+  color: #7a7a7a;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 960px) {
+  .cta-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+.cta-description {
+  color: #5a5a5a;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 960px) {
+  .cta-description {
+    font-size: 0.95rem;
   }
 }
 </style>

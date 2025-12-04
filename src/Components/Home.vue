@@ -41,6 +41,40 @@
         </v-row>
     </v-container>
 
+    <!-- Package Recommendation CTA -->
+    <v-container class="py-6 py-md-10">
+        <v-row justify="center">
+            <v-col cols="12" md="10" lg="8">
+                <v-card class="recommendation-cta-card pa-6 pa-md-8" elevation="4">
+                    <v-row align="center">
+                        <v-col cols="12" md="8">
+                            <div class="d-flex align-center mb-3">
+                                <v-icon color="amber-darken-2" size="60" class="mr-3">mdi-lightbulb-on</v-icon>
+                                <div>
+                                    <h2 class="cta-title mb-1">Not Sure What to Order?</h2>
+                                    <p class="cta-subtitle mb-0">Let us help you find the perfect package for your event</p>
+                                </div>
+                            </div>
+                            <p class="cta-description">
+                                Answer a few simple questions about your event, and our smart recommendation system will suggest the best packages tailored to your needs, budget, and guest count.
+                            </p>
+                        </v-col>
+                        <v-col cols="12" md="4" class="text-center text-md-right">
+                            <v-btn
+                                to="/package-recommendation"
+                                color="amber-darken-2"
+                                size="x-large"
+                                prepend-icon="mdi-wizard-hat"
+                            >
+                                Get Recommendations
+                            </v-btn>
+                        </v-col>
+                    </v-row>
+                </v-card>
+            </v-col>
+        </v-row>
+    </v-container>
+
     <!-- Featured Section -->
     <v-container class="py-8">
         <v-row>
@@ -159,6 +193,47 @@
 
 .feature-card .v-card-subtitle {
     color: #7a7a7a;
+}
+
+.recommendation-cta-card {
+    background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+    border-radius: 20px;
+    border: 2px solid #b28704;
+}
+
+.cta-title {
+    color: #b28704;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media (min-width: 960px) {
+    .cta-title {
+        font-size: 1.8rem;
+    }
+}
+
+.cta-subtitle {
+    color: #7a7a7a;
+    font-size: 0.95rem;
+}
+
+@media (min-width: 960px) {
+    .cta-subtitle {
+        font-size: 1.05rem;
+    }
+}
+
+.cta-description {
+    color: #5a5a5a;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 960px) {
+    .cta-description {
+        font-size: 1rem;
+    }
 }
 </style>
 

@@ -29,6 +29,7 @@ function handleLogout() {
     <div class="d-none d-lg-flex align-center">
       <v-btn to="/" variant="text" class="mx-1">Home</v-btn>
       <v-btn to="/menu" variant="text" class="mx-1">Menu</v-btn>
+      <v-btn to="/package-recommendation" variant="text" class="mx-1">Packages</v-btn>
       <v-btn to="/reservation" variant="text" class="mx-1">Reservation</v-btn>
       <v-btn to="/events" variant="text" class="mx-1">Events</v-btn>
       <v-btn to="/aboutus" variant="text" class="mx-1">About</v-btn>
@@ -113,6 +114,7 @@ function handleLogout() {
       <!-- Main Navigation -->
       <v-list-item prepend-icon="mdi-home" title="Home" to="/" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-silverware-fork-knife" title="Menu" to="/menu" @click="drawer = false"></v-list-item>
+      <v-list-item prepend-icon="mdi-lightbulb-on" title="Package Recommendations" to="/package-recommendation" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-calendar-check" title="Reservation" to="/reservation" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-party-popper" title="Events" to="/events" @click="drawer = false"></v-list-item>
       <v-list-item prepend-icon="mdi-information" title="About Us" to="/aboutus" @click="drawer = false"></v-list-item>

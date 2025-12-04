@@ -17,6 +17,8 @@ import Cart from '@/Components/Cart.vue'
 import Checkout from '@/Components/Checkout.vue'
 import OrderSuccess from '@/Components/OrderSuccess.vue'
 import MyOrders from '@/Components/MyOrders.vue'
+import PackageRecommendation from '@/Components/PackageRecommendation.vue'
+import RecommendationResults from '@/Components/RecommendationResults.vue'
 
 
 const router = createRouter({
@@ -107,6 +109,16 @@ const router = createRouter({
       name: 'my-orders',
       path: '/my-orders',
       component: MyOrders
+    },
+    {
+      name: 'package-recommendation',
+      path: '/package-recommendation',
+      component: PackageRecommendation
+    },
+    {
+      name: 'recommendation-results',
+      path: '/recommendation-results',
+      component: RecommendationResults
     },
   ],
 })
