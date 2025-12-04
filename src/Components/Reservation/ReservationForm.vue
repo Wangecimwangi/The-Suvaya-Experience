@@ -169,9 +169,21 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/auth'
 import { isDateBooked, addBooking } from '@/api/bookings'
 
 const router = useRouter()
+const authStore = useAuthStore()
+
+// Check if user is logged in
+if (!authStore.isLoggedIn) {
+  if (confirm('You need to login to make a reservation. Login now?')) {
+    router.push({
+      path: '/login',
+      query: { redirect: '/reservation' }
+    })
+  }
+}
 
 const name = ref('')
 const email = ref('')

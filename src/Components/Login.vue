@@ -1,9 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 
 const router = useRouter()
+const route = useRoute()
 const authStore = useAuthStore()
 
 const email = ref('')
@@ -37,8 +38,11 @@ async function handleLogin() {
       password: password.value
     })
 
-    // Redirect based on user type
-    if (authStore.isAdmin) {
+    // Redirect to saved location or based on user type
+    const redirect = route.query.redirect
+    if (redirect) {
+      router.push(redirect)
+    } else if (authStore.isAdmin) {
       router.push('/admin')
     } else {
       router.push('/')

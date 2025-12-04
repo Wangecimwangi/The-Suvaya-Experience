@@ -2,6 +2,7 @@
 require_once '../../config/database.php';
 require_once '../../utils/cors.php';
 require_once '../../utils/helpers.php';
+require_once '../../utils/email.php';
 
 $database = new Database();
 $db = $database->getConnection();
@@ -66,6 +67,25 @@ try {
 
     // Commit transaction
     $db->commit();
+
+    // Send reservation confirmation email
+    try {
+        $emailService = getEmailService();
+        $emailData = [
+            'name' => $data->name,
+            'email' => $data->email,
+            'phone' => $data->phone,
+            'date' => $data->date,
+            'time' => $data->time,
+            'guests' => $data->guests,
+            'notes' => $data->notes ?? ''
+        ];
+
+        $emailService->sendReservationConfirmation($data->email, $emailData);
+    } catch (Exception $emailError) {
+        // Log email error but don't fail the reservation
+        error_log('Failed to send reservation confirmation email: ' . $emailError->getMessage());
+    }
 
     sendResponse(201, 'Reservation created successfully', [
         'reservation_id' => $reservation_id,

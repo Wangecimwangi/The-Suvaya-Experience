@@ -9,6 +9,15 @@ const cartStore = useCartStore()
 const authStore = useAuthStore()
 const router = useRouter()
 
+// Check if user is logged in
+if (!authStore.isLoggedIn) {
+  // Save current route to redirect back after login
+  router.push({
+    path: '/login',
+    query: { redirect: '/checkout' }
+  })
+}
+
 // If cart is empty, redirect to menu
 if (cartStore.items.length === 0) {
   router.push('/menu')

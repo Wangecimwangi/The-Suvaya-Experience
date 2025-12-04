@@ -1,10 +1,26 @@
 <script setup>
 import { computed } from 'vue'
 import { useCartStore } from '@/stores/cart'
+import { useAuthStore } from '@/stores/auth'
 import { useRouter } from 'vue-router'
 
 const cartStore = useCartStore()
+const authStore = useAuthStore()
 const router = useRouter()
+
+// Check if user is logged in before allowing checkout
+function checkAuthAndProceed() {
+  if (!authStore.isLoggedIn) {
+    if (confirm('You need to login to complete your order. Login now?')) {
+      router.push({
+        path: '/login',
+        query: { redirect: '/cart' }
+      })
+    }
+    return false
+  }
+  return true
+}
 
 function formatPrice(price) {
   return new Intl.NumberFormat('en-KE', {
@@ -26,7 +42,9 @@ function getCategoryIcon(category) {
 }
 
 function proceedToCheckout() {
-  router.push('/checkout')
+  if (checkAuthAndProceed()) {
+    router.push('/checkout')
+  }
 }
 
 function continueShopping() {
