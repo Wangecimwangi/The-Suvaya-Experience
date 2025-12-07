@@ -12,6 +12,19 @@ const loading = ref(false)
 const filter = ref('all') // all, upcoming, past, cancelled
 const searchQuery = ref('')
 
+// Dialogs
+const detailsDialog = ref(false)
+const paymentDialog = ref(false)
+const selectedReservation = ref(null)
+
+// Payment form
+const showCardDialog = ref(false)
+const cardNumber = ref('')
+const cardName = ref('')
+const cardExpiry = ref('')
+const cardCVV = ref('')
+const processingPayment = ref(false)
+
 // Redirect if not logged in
 if (!authStore.isLoggedIn) {
   router.push('/login')
@@ -101,6 +114,61 @@ function formatDate(dateString) {
 
 function goToNewReservation() {
   router.push('/reservation')
+}
+
+function viewDetails(reservation) {
+  selectedReservation.value = reservation
+  detailsDialog.value = true
+}
+
+function openPaymentDialog(reservation) {
+  selectedReservation.value = reservation
+  paymentDialog.value = true
+}
+
+async function processCardPayment() {
+  processingPayment.value = true
+
+  // Simulate payment processing
+  await new Promise(resolve => setTimeout(resolve, 2000))
+
+  try {
+    // TODO: Add actual payment API call here
+    // For now, we'll just update the reservation status
+    const index = reservations.value.findIndex(r => r.id === selectedReservation.value.id)
+    if (index !== -1) {
+      reservations.value[index].deposit_paid = true
+    }
+
+    alert('Payment successful! Your deposit has been recorded.')
+    showCardDialog.value = false
+    paymentDialog.value = false
+
+    // Reset form
+    cardNumber.value = ''
+    cardName.value = ''
+    cardExpiry.value = ''
+    cardCVV.value = ''
+  } catch (error) {
+    console.error('Payment error:', error)
+    alert('Payment failed. Please try again.')
+  } finally {
+    processingPayment.value = false
+  }
+}
+
+function payWithCard() {
+  showCardDialog.value = true
+}
+
+function payWithMpesa() {
+  alert('M-Pesa Payment:\n\n1. Go to M-Pesa menu\n2. Select "Lipa na M-Pesa"\n3. Select "Buy Goods and Services"\n4. Enter Till Number: 5858585\n5. Enter the deposit amount\n6. Enter your PIN\n\nYour deposit will be confirmed once payment is verified.')
+  paymentDialog.value = false
+}
+
+function payWithCash() {
+  alert('Cash payment: Please bring the deposit amount when you arrive for your reservation.')
+  paymentDialog.value = false
 }
 
 onMounted(() => {
@@ -263,6 +331,7 @@ onMounted(() => {
               variant="text"
               color="amber-darken-2"
               size="small"
+              @click="viewDetails(reservation)"
             >
               View Details
             </v-btn>
@@ -274,6 +343,7 @@ onMounted(() => {
               variant="tonal"
               color="green"
               size="small"
+              @click="openPaymentDialog(reservation)"
             >
               Pay Deposit
             </v-btn>
@@ -307,6 +377,230 @@ onMounted(() => {
         </v-card>
       </v-col>
     </v-row>
+
+    <!-- View Details Dialog -->
+    <v-dialog v-model="detailsDialog" max-width="600">
+      <v-card v-if="selectedReservation">
+        <v-card-title class="d-flex align-center justify-space-between bg-amber-lighten-5">
+          <div class="d-flex align-center">
+            <v-icon color="amber-darken-2" class="mr-2">mdi-calendar-check</v-icon>
+            <span>Reservation Details</span>
+          </div>
+          <v-btn icon size="small" variant="text" @click="detailsDialog = false">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+        </v-card-title>
+
+        <v-card-text class="pa-6">
+          <v-row dense>
+            <v-col cols="12">
+              <div class="detail-item">
+                <div class="detail-label">Date & Time</div>
+                <div class="detail-value">
+                  {{ formatDate(selectedReservation.date) }} at {{ selectedReservation.time }}
+                </div>
+              </div>
+            </v-col>
+
+            <v-col cols="12" sm="6">
+              <div class="detail-item">
+                <div class="detail-label">Name</div>
+                <div class="detail-value">{{ selectedReservation.name }}</div>
+              </div>
+            </v-col>
+
+            <v-col cols="12" sm="6">
+              <div class="detail-item">
+                <div class="detail-label">Number of Guests</div>
+                <div class="detail-value">{{ selectedReservation.guests }}</div>
+              </div>
+            </v-col>
+
+            <v-col cols="12" sm="6">
+              <div class="detail-item">
+                <div class="detail-label">Email</div>
+                <div class="detail-value">{{ selectedReservation.email }}</div>
+              </div>
+            </v-col>
+
+            <v-col cols="12" sm="6">
+              <div class="detail-item">
+                <div class="detail-label">Phone</div>
+                <div class="detail-value">{{ selectedReservation.phone }}</div>
+              </div>
+            </v-col>
+
+            <v-col cols="12">
+              <div class="detail-item">
+                <div class="detail-label">Status</div>
+                <v-chip :color="getStatusColor(selectedReservation.status)" size="small">
+                  {{ selectedReservation.status }}
+                </v-chip>
+              </div>
+            </v-col>
+
+            <v-col cols="12">
+              <div class="detail-item">
+                <div class="detail-label">Deposit Status</div>
+                <v-chip :color="selectedReservation.deposit_paid ? 'green' : 'orange'" size="small">
+                  {{ selectedReservation.deposit_paid ? 'Paid' : 'Pending' }}
+                </v-chip>
+              </div>
+            </v-col>
+
+            <v-col cols="12" v-if="selectedReservation.notes">
+              <div class="detail-item">
+                <div class="detail-label">Special Notes</div>
+                <div class="detail-value">{{ selectedReservation.notes }}</div>
+              </div>
+            </v-col>
+          </v-row>
+        </v-card-text>
+
+        <v-card-actions class="pa-4">
+          <v-spacer></v-spacer>
+          <v-btn color="amber-darken-2" @click="detailsDialog = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <!-- Payment Method Dialog -->
+    <v-dialog v-model="paymentDialog" max-width="500">
+      <v-card v-if="selectedReservation">
+        <v-card-title class="bg-amber-lighten-5">
+          <v-icon color="amber-darken-2" class="mr-2">mdi-cash-multiple</v-icon>
+          Pay Deposit
+        </v-card-title>
+
+        <v-card-text class="pa-6">
+          <p class="text-body-1 mb-4">
+            Select a payment method for your reservation deposit:
+          </p>
+
+          <v-btn
+            color="blue"
+            variant="tonal"
+            block
+            size="large"
+            class="mb-3"
+            prepend-icon="mdi-credit-card"
+            @click="payWithCard"
+          >
+            Pay with Card
+          </v-btn>
+
+          <v-btn
+            color="green"
+            variant="tonal"
+            block
+            size="large"
+            class="mb-3"
+            prepend-icon="mdi-cellphone"
+            @click="payWithMpesa"
+          >
+            Pay with M-Pesa
+          </v-btn>
+
+          <v-btn
+            color="amber-darken-2"
+            variant="tonal"
+            block
+            size="large"
+            prepend-icon="mdi-cash"
+            @click="payWithCash"
+          >
+            Pay Cash Later
+          </v-btn>
+        </v-card-text>
+
+        <v-card-actions class="pa-4">
+          <v-spacer></v-spacer>
+          <v-btn variant="text" @click="paymentDialog = false">Cancel</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <!-- Card Payment Dialog -->
+    <v-dialog v-model="showCardDialog" max-width="500" persistent>
+      <v-card>
+        <v-card-title class="bg-blue-lighten-5">
+          <v-icon color="blue" class="mr-2">mdi-credit-card</v-icon>
+          Card Payment
+        </v-card-title>
+
+        <v-card-text class="pa-6">
+          <v-form>
+            <v-text-field
+              v-model="cardNumber"
+              label="Card Number"
+              placeholder="1234 5678 9012 3456"
+              variant="outlined"
+              color="blue"
+              prepend-inner-icon="mdi-credit-card-outline"
+              :disabled="processingPayment"
+            ></v-text-field>
+
+            <v-text-field
+              v-model="cardName"
+              label="Cardholder Name"
+              placeholder="John Doe"
+              variant="outlined"
+              color="blue"
+              prepend-inner-icon="mdi-account"
+              :disabled="processingPayment"
+            ></v-text-field>
+
+            <v-row>
+              <v-col cols="6">
+                <v-text-field
+                  v-model="cardExpiry"
+                  label="Expiry Date"
+                  placeholder="MM/YY"
+                  variant="outlined"
+                  color="blue"
+                  prepend-inner-icon="mdi-calendar"
+                  :disabled="processingPayment"
+                ></v-text-field>
+              </v-col>
+              <v-col cols="6">
+                <v-text-field
+                  v-model="cardCVV"
+                  label="CVV"
+                  placeholder="123"
+                  variant="outlined"
+                  color="blue"
+                  prepend-inner-icon="mdi-lock"
+                  type="password"
+                  :disabled="processingPayment"
+                ></v-text-field>
+              </v-col>
+            </v-row>
+
+            <v-alert type="info" variant="tonal" class="mt-2">
+              This is a simulated payment. Your card will not be charged.
+            </v-alert>
+          </v-form>
+        </v-card-text>
+
+        <v-card-actions class="pa-4">
+          <v-spacer></v-spacer>
+          <v-btn
+            variant="text"
+            @click="showCardDialog = false; paymentDialog = true"
+            :disabled="processingPayment"
+          >
+            Back
+          </v-btn>
+          <v-btn
+            color="blue"
+            @click="processCardPayment"
+            :loading="processingPayment"
+          >
+            {{ processingPayment ? 'Processing...' : 'Pay Now' }}
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-container>
 </template>
 
@@ -384,6 +678,22 @@ onMounted(() => {
 .empty-state {
   background: #fffbe6;
   border-radius: 16px;
+}
+
+.detail-item {
+  margin-bottom: 16px;
+}
+
+.detail-label {
+  font-size: 0.875rem;
+  color: #7a7a7a;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-size: 1rem;
+  color: #333;
 }
 
 @media (max-width: 600px) {

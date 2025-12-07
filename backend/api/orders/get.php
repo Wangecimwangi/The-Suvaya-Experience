@@ -42,12 +42,32 @@ try {
             sendError(404, 'Order not found');
         }
     } else {
-        // Get all orders
-        $query = "SELECT * FROM orders ORDER BY created_at DESC";
+        // Get all orders (optionally filtered by user email)
+        $user_email = isset($_GET['user_email']) ? $_GET['user_email'] : null;
+
+        $query = "SELECT * FROM orders";
+        if ($user_email) {
+            $query .= " WHERE email = :user_email";
+        }
+        $query .= " ORDER BY created_at DESC";
+
         $stmt = $db->prepare($query);
+        if ($user_email) {
+            $stmt->bindParam(':user_email', $user_email);
+        }
         $stmt->execute();
 
         $orders = $stmt->fetchAll();
+
+        // Get items for each order
+        foreach ($orders as &$order) {
+            $itemsQuery = "SELECT * FROM order_items WHERE order_id = :order_id";
+            $itemsStmt = $db->prepare($itemsQuery);
+            $itemsStmt->bindParam(':order_id', $order['id']);
+            $itemsStmt->execute();
+            $order['items'] = $itemsStmt->fetchAll();
+        }
+
         sendResponse(200, 'Orders retrieved successfully', $orders);
     }
 

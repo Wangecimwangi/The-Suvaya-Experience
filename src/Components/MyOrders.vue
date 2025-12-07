@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
-import { orderAPI } from '@/services/api'
+import { ordersAPI } from '@/services/api'
 import { useAuthStore } from '@/stores/auth'
 
 const authStore = useAuthStore()
@@ -44,7 +44,12 @@ const filteredOrders = computed(() => {
 async function loadOrders() {
   loading.value = true
   try {
-    const response = await orderAPI.getAll()
+    // Get orders for the logged-in user
+    const userEmail = authStore.user?.email
+    const response = userEmail
+      ? await ordersAPI.getAll(userEmail)
+      : await ordersAPI.getAll()
+
     orders.value = response.data || []
   } catch (error) {
     console.error('Error loading orders:', error)

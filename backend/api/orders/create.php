@@ -119,7 +119,14 @@ try {
             'special_instructions' => $data->special_instructions ?? ''
         ];
 
+        // Send email to customer
         $emailService->sendOrderReceipt($data->customer_email, $emailData);
+
+        // Send copy to admin
+        $config = require '../../config/email.php';
+        $adminEmail = $config['admin']['email'] ?? 'admin@suvaya.com';
+        $emailService->sendOrderReceipt($adminEmail, $emailData);
+
     } catch (Exception $emailError) {
         // Log email error but don't fail the order
         error_log('Failed to send order confirmation email: ' . $emailError->getMessage());

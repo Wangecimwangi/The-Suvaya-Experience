@@ -47,6 +47,12 @@ return [
         'name' => 'The Suvaya Experience'
     ],
 
+    // Admin Notifications
+    'admin' => [
+        'email' => 'chegeeddie@gmail.com', // Admin email
+        'name' => 'Suvaya Admin'
+    ],
+
     // Email Logging
     'log' => [
         'enabled' => true, // Always log emails to file

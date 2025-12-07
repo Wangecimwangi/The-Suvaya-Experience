@@ -81,7 +81,14 @@ try {
             'notes' => $data->notes ?? ''
         ];
 
+        // Send email to customer
         $emailService->sendReservationConfirmation($data->email, $emailData);
+
+        // Send copy to admin
+        $config = require '../../config/email.php';
+        $adminEmail = $config['admin']['email'] ?? 'admin@suvaya.com';
+        $emailService->sendReservationConfirmation($adminEmail, $emailData);
+
     } catch (Exception $emailError) {
         // Log email error but don't fail the reservation
         error_log('Failed to send reservation confirmation email: ' . $emailError->getMessage());

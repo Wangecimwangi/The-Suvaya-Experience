@@ -54,7 +54,10 @@ export const menuAPI = {
 // Orders API
 export const ordersAPI = {
   create: (data) => apiCall('/orders/create.php', 'POST', data),
-  getAll: () => apiCall('/orders/get.php'),
+  getAll: (userEmail = null) => {
+    const url = userEmail ? `/orders/get.php?user_email=${encodeURIComponent(userEmail)}` : '/orders/get.php';
+    return apiCall(url);
+  },
   getById: (id) => apiCall(`/orders/get.php?id=${id}`),
   getByOrderNumber: (orderNumber) => apiCall(`/orders/get.php?order_number=${orderNumber}`),
   updateStatus: (id, status) => apiCall('/orders/update-status.php', 'POST', { id, status }),

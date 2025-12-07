@@ -32,7 +32,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="mt-4">
+    <v-row v-if="!loading && !error && menuItems.length > 0" class="mt-4">
       <v-col v-for="item in filteredMenu" :key="item.id" cols="12" sm="6" lg="4" xl="3">
         <v-card class="menu-card" elevation="4" height="100%">
           <v-img :src="item.image" height="200px" cover></v-img>
@@ -88,35 +88,78 @@
           </v-card-text>
 
           <v-card-actions class="pt-0">
-            <v-btn color="amber-darken-2" variant="flat" block @click="openPayDialog(item)">
-              Pay Deposit
+            <v-btn
+              color="amber-darken-2"
+              variant="flat"
+              block
+              prepend-icon="mdi-cart-plus"
+              @click="addToCart(item)"
+            >
+              Add to Cart
             </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
 
-    <v-dialog v-model="payDialog" max-width="420">
-      <v-card>
-        <v-card-title>Confirm Deposit</v-card-title>
-        <v-card-text>
-          <div v-if="selectedItem">Pay 50% deposit for <strong>{{ selectedItem.name }}</strong> — <span v-if="selectedItem.price">KSh {{ Math.round(selectedItem.price/2).toLocaleString() }}</span><span v-else>N/A</span></div>
-        </v-card-text>
-        <v-card-actions>
-          <v-btn color="amber darken-2" @click="confirmPay">Pay</v-btn>
-          <v-btn text @click="payDialog = false">Cancel</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+    <!-- Loading state -->
+    <v-row v-if="loading" class="mt-8">
+      <v-col cols="12" class="text-center">
+        <v-progress-circular
+          indeterminate
+          color="amber-darken-2"
+          size="64"
+        ></v-progress-circular>
+        <p class="mt-4 text-h6">Loading menu items...</p>
+      </v-col>
+    </v-row>
+
+    <!-- Error state -->
+    <v-row v-if="error && !loading" class="mt-8">
+      <v-col cols="12" class="text-center">
+        <v-alert type="error" variant="tonal">
+          {{ error }}
+        </v-alert>
+      </v-col>
+    </v-row>
+
+    <!-- Empty state -->
+    <v-row v-if="!loading && !error && menuItems.length === 0" class="mt-8">
+      <v-col cols="12" class="text-center">
+        <v-alert type="info" variant="tonal">
+          No menu items available at the moment. Please check back later!
+        </v-alert>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { menuItems as sharedMenu } from '@/data/menuData'
-import { addBooking } from '@/api/bookings'
+import { ref, computed, onMounted } from 'vue'
+import { menuAPI } from '@/services/api'
+import { useCartStore } from '@/stores/cart'
+import { useRouter } from 'vue-router'
 
-const menuItems = sharedMenu
+const cartStore = useCartStore()
+const router = useRouter()
+
+const menuItems = ref([])
+const loading = ref(true)
+const error = ref(null)
+
+// Fetch menu items from API
+onMounted(async () => {
+  try {
+    loading.value = true
+    const response = await menuAPI.getAll()
+    menuItems.value = response.data || []
+  } catch (err) {
+    console.error('Failed to load menu:', err)
+    error.value = 'Failed to load menu items. Please try again later.'
+  } finally {
+    loading.value = false
+  }
+})
 function normalizeCategory(cat) {
   if (!cat) return 'Uncategorized'
   return cat.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ')
@@ -124,7 +167,7 @@ function normalizeCategory(cat) {
 const tab = ref(0)
 const categories = computed(() => {
   const set = new Set()
-  for (const it of menuItems) {
+  for (const it of menuItems.value) {
     set.add(normalizeCategory(it.category))
   }
   // default tabs we want to always show (in this order)
@@ -136,27 +179,25 @@ const categories = computed(() => {
   const sorted = defaultTabs.filter(o => set.has(o)).concat(rest)
   return ['All', ...sorted]
 })
-const menuItem = sharedMenu
 
-const payDialog = ref(false)
-const selectedItem = ref(null)
+// Add to cart function
+function addToCart(item) {
+  cartStore.addItem({
+    id: item.id,
+    name: item.name,
+    price: item.price || 0,
+    image: item.image || '/images/placeholder.jpg',
+    category: item.category,
+    description: item.description || ''
+  })
 
-function openPayDialog(item) {
-  selectedItem.value = item
-  payDialog.value = true
-}
-
-function confirmPay() {
-  if (!selectedItem.value) return
-  addBooking(new Date().toISOString().slice(0,10), { itemId: selectedItem.value.id, deposit: selectedItem.value.price ? Math.round(selectedItem.value.price/2) : 0 })
-  alert(`Deposit recorded for ${selectedItem.value.name}`)
-  payDialog.value = false
-  selectedItem.value = null
+  // Show success notification
+  alert(`${item.name} added to cart!`)
 }
 
 const filteredMenu = computed(() => {
-  if (categories[tab.value] === 'All') return menuItems
-  return menuItems.filter(item => item.category === categories[tab.value])
+  if (categories.value[tab.value] === 'All') return menuItems.value
+  return menuItems.value.filter(item => normalizeCategory(item.category) === categories.value[tab.value])
 })
 </script>
 
