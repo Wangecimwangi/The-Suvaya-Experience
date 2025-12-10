@@ -190,11 +190,17 @@ onMounted(() => {
         <v-card class="product-card" elevation="3">
           <!-- Product Image -->
           <v-img
-            :src="item.image || 'https://via.placeholder.com/300x200?text=' + encodeURIComponent(item.name)"
+            v-if="item.image"
+            :src="item.image"
             height="200"
             cover
             class="product-image"
           >
+            <template v-slot:error>
+              <div class="image-error-placeholder">
+                <v-icon size="80" color="grey-lighten-1">mdi-image-off-outline</v-icon>
+              </div>
+            </template>
             <div class="category-badge">
               <v-chip size="small" color="amber-darken-2">
                 <v-icon start size="small">{{ getCategoryIcon(item.category) }}</v-icon>
@@ -202,6 +208,15 @@ onMounted(() => {
               </v-chip>
             </div>
           </v-img>
+          <div v-else class="image-placeholder">
+            <v-icon size="80" color="grey-lighten-1">{{ getCategoryIcon(item.category) }}</v-icon>
+            <div class="category-badge">
+              <v-chip size="small" color="amber-darken-2">
+                <v-icon start size="small">{{ getCategoryIcon(item.category) }}</v-icon>
+                {{ item.category }}
+              </v-chip>
+            </div>
+          </div>
 
           <v-card-text class="product-details">
             <h3 class="product-name">{{ item.name }}</h3>
@@ -384,6 +399,17 @@ onMounted(() => {
 .cart-fab {
   margin-bottom: 70px;
   margin-right: 16px;
+}
+
+.image-placeholder,
+.image-error-placeholder {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  position: relative;
+  border-radius: 12px 12px 0 0;
 }
 
 @media (max-width: 600px) {

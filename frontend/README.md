@@ -211,7 +211,7 @@ Using Material Design Icons via Vuetify:
 Browse icons at: https://pictogrammers.com/library/mdi/
 
 ## Common Development Tasks
-
+./scripts/import-db.sh database/suvaya_backup_20251210_210046.sql
 ### Add new menu category
 1. Update category list in `MenuList.vue`
 2. Add category option in `Admin.vue`
