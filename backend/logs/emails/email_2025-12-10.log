@@ -1,0 +1,5384 @@
+
+================================================================================
+Timestamp: 2025-12-10 08:22:35
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 10, 2025
+                🕐 4:28 PM
+                
+                    👥 1 Guest                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Wednesday, December 10, 2025
+                
+                
+                    Time:
+                    4:28 PM
+                
+                
+                    Number of Guests:
+                    1
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 08:22:35
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 10, 2025
+                🕐 4:28 PM
+                
+                    👥 1 Guest                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Wednesday, December 10, 2025
+                
+                
+                    Time:
+                    4:28 PM
+                
+                
+                    Number of Guests:
+                    1
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 08:26:17
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 11, 2025
+                🕐 4:30 PM
+                
+                    👥 1 Guest                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Thursday, December 11, 2025
+                
+                
+                    Time:
+                    4:30 PM
+                
+                
+                    Number of Guests:
+                    1
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 08:26:17
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 11, 2025
+                🕐 4:30 PM
+                
+                    👥 1 Guest                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Thursday, December 11, 2025
+                
+                
+                    Time:
+                    4:30 PM
+                
+                
+                    Number of Guests:
+                    1
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 08:42:35
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 14, 2025
+                🕐 8:47 PM
+                
+                    👥 10 Guests                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Sunday, December 14, 2025
+                
+                
+                    Time:
+                    8:47 PM
+                
+                
+                    Number of Guests:
+                    10
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 08:42:35
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 14, 2025
+                🕐 8:47 PM
+                
+                    👥 10 Guests                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Sunday, December 14, 2025
+                
+                
+                    Time:
+                    8:47 PM
+                
+                
+                    Number of Guests:
+                    10
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 08:47:17
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 17, 2025
+                🕐 2:50 PM
+                
+                    👥 1 Guest                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Wednesday, December 17, 2025
+                
+                
+                    Time:
+                    2:50 PM
+                
+                
+                    Number of Guests:
+                    1
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 08:47:17
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 17, 2025
+                🕐 2:50 PM
+                
+                    👥 1 Guest                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Wednesday, December 17, 2025
+                
+                
+                    Time:
+                    2:50 PM
+                
+                
+                    Number of Guests:
+                    1
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:05:54
+To: admin@suvaya.com
+Subject: Order Confirmation #ORD-20251210-9859 - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Order Receipt - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .items-table th {
+            background-color: #b28704;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .items-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .items-table tr:last-child td {
+            border-bottom: none;
+        }
+        .items-table .item-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .items-table .item-quantity {
+            text-align: center;
+        }
+        .items-table .item-price {
+            text-align: right;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+        .totals-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        .total-row.highlight {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2e7d32;
+            border-top: 2px solid #b28704;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+        .total-row.balance {
+            color: #d32f2f;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .items-table th,
+            .items-table td {
+                padding: 8px 5px;
+                font-size: 13px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            Hello Admin!
+
+            
+                Thank you for your order! We're excited to prepare your delicious treats.
+                Your order has been received and confirmed. Here are the details:
+            
+
+            
+            
+                📋 Order Information
+                
+                    Order ID:
+                    #ORD-20251210-9859
+                
+                
+                    Order Date:
+                    December 10, 2025 9:05 AM
+                
+            
+
+            
+            
+                🚚 Delivery Information
+                
+                    Date:
+                    Thursday, December 18, 2025
+                
+                
+                    Time:
+                    2:04 PM
+                
+                
+                    Address:
+                    Kiaora, Juja, Kiambu
+                
+            
+
+            
+            🛒 Order Items
+            
+                
+                    
+                        Item
+                        Qty
+                        Price
+                    
+                
+                
+                                        
+                        
+                            Red Velvet Cake
+                                                        Classic red velvet with cream cheese frosting
+                                                    
+                        1
+                        KES 4,000.00
+                    
+                                        
+                        
+                            Premium Anniversary Package
+                                                        Romantic anniversary celebration
+                                                    
+                        1
+                        KES 35,000.00
+                    
+                                        
+                        
+                            Red Velvet
+                                                        Red Velvet Description
+                                                    
+                        1
+                        KES 4,000.00
+                    
+                                    
+            
+
+            
+            
+                
+                    Subtotal:
+                    KES 43,000.00
+                
+                
+                    ✅ Deposit Paid:
+                    KES 21,500.00
+                
+                
+                    ⏳ Balance Due (on delivery):
+                    KES 21,500.00
+                
+            
+
+            
+            
+            
+                ⚠️ Payment Reminder:
+                The remaining balance of KES 21,500.00 is due on delivery.
+                Payment can be made via M-Pesa or cash.
+            
+
+            
+            
+                📞 Contact Us
+                
+                    If you have any questions about your order, please don't hesitate to contact us:
+                    Phone: +254 700 000 000
+                    Email: orders@suvaya.com
+                
+            
+
+            
+                We're working hard to make your order perfect. Thank you for choosing The Suvaya Experience!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:06:10
+To: test@test.com
+Subject: Order Confirmation #ORD-20251210-6575 - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Order Receipt - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .items-table th {
+            background-color: #b28704;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .items-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .items-table tr:last-child td {
+            border-bottom: none;
+        }
+        .items-table .item-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .items-table .item-quantity {
+            text-align: center;
+        }
+        .items-table .item-price {
+            text-align: right;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+        .totals-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        .total-row.highlight {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2e7d32;
+            border-top: 2px solid #b28704;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+        .total-row.balance {
+            color: #d32f2f;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .items-table th,
+            .items-table td {
+                padding: 8px 5px;
+                font-size: 13px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            Hello Test!
+
+            
+                Thank you for your order! We're excited to prepare your delicious treats.
+                Your order has been received and confirmed. Here are the details:
+            
+
+            
+            
+                📋 Order Information
+                
+                    Order ID:
+                    #ORD-20251210-6575
+                
+                
+                    Order Date:
+                    December 10, 2025 9:06 AM
+                
+            
+
+            
+            
+                🚚 Delivery Information
+                
+                    Date:
+                    Wednesday, December 17, 2025
+                
+                
+                    Time:
+                    10:00 AM
+                
+                
+                    Address:
+                    Test Address
+                
+            
+
+            
+            🛒 Order Items
+            
+                
+                    
+                        Item
+                        Qty
+                        Price
+                    
+                
+                
+                                        
+                        
+                            Test Package
+                                                    
+                        1
+                        KES 1,000.00
+                    
+                                    
+            
+
+            
+            
+                
+                    Subtotal:
+                    KES 1,000.00
+                
+                
+                    ✅ Deposit Paid:
+                    KES 500.00
+                
+                
+                    ⏳ Balance Due (on delivery):
+                    KES 500.00
+                
+            
+
+                        
+            
+                📝 Special Instructions
+                Test
+            
+            
+            
+            
+                ⚠️ Payment Reminder:
+                The remaining balance of KES 500.00 is due on delivery.
+                Payment can be made via M-Pesa or cash.
+            
+
+            
+            
+                📞 Contact Us
+                
+                    If you have any questions about your order, please don't hesitate to contact us:
+                    Phone: +254 700 000 000
+                    Email: orders@suvaya.com
+                
+            
+
+            
+                We're working hard to make your order perfect. Thank you for choosing The Suvaya Experience!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:06:46
+To: test@test.com
+Subject: Order Confirmation #ORD-20251210-6446 - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Order Receipt - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .items-table th {
+            background-color: #b28704;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .items-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .items-table tr:last-child td {
+            border-bottom: none;
+        }
+        .items-table .item-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .items-table .item-quantity {
+            text-align: center;
+        }
+        .items-table .item-price {
+            text-align: right;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+        .totals-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        .total-row.highlight {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2e7d32;
+            border-top: 2px solid #b28704;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+        .total-row.balance {
+            color: #d32f2f;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .items-table th,
+            .items-table td {
+                padding: 8px 5px;
+                font-size: 13px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            Hello Test User!
+
+            
+                Thank you for your order! We're excited to prepare your delicious treats.
+                Your order has been received and confirmed. Here are the details:
+            
+
+            
+            
+                📋 Order Information
+                
+                    Order ID:
+                    #ORD-20251210-6446
+                
+                
+                    Order Date:
+                    December 10, 2025 9:06 AM
+                
+            
+
+            
+            
+                🚚 Delivery Information
+                
+                    Date:
+                    Wednesday, December 17, 2025
+                
+                
+                    Time:
+                    10:00 AM
+                
+                
+                    Address:
+                    Test Address, Nairobi
+                
+            
+
+            
+            🛒 Order Items
+            
+                
+                    
+                        Item
+                        Qty
+                        Price
+                    
+                
+                
+                                        
+                        
+                            Wedding Package
+                                                        Complete wedding package
+                                                    
+                        1
+                        KES 50,000.00
+                    
+                                    
+            
+
+            
+            
+                
+                    Subtotal:
+                    KES 50,000.00
+                
+                
+                    ✅ Deposit Paid:
+                    KES 25,000.00
+                
+                
+                    ⏳ Balance Due (on delivery):
+                    KES 25,000.00
+                
+            
+
+                        
+            
+                📝 Special Instructions
+                Please call before delivery
+            
+            
+            
+            
+                ⚠️ Payment Reminder:
+                The remaining balance of KES 25,000.00 is due on delivery.
+                Payment can be made via M-Pesa or cash.
+            
+
+            
+            
+                📞 Contact Us
+                
+                    If you have any questions about your order, please don't hesitate to contact us:
+                    Phone: +254 700 000 000
+                    Email: orders@suvaya.com
+                
+            
+
+            
+                We're working hard to make your order perfect. Thank you for choosing The Suvaya Experience!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:06:46
+To: chegeeddie@gmail.com
+Subject: Order Confirmation #ORD-20251210-6446 - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Order Receipt - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .items-table th {
+            background-color: #b28704;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .items-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .items-table tr:last-child td {
+            border-bottom: none;
+        }
+        .items-table .item-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .items-table .item-quantity {
+            text-align: center;
+        }
+        .items-table .item-price {
+            text-align: right;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+        .totals-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        .total-row.highlight {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2e7d32;
+            border-top: 2px solid #b28704;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+        .total-row.balance {
+            color: #d32f2f;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .items-table th,
+            .items-table td {
+                padding: 8px 5px;
+                font-size: 13px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            Hello Test User!
+
+            
+                Thank you for your order! We're excited to prepare your delicious treats.
+                Your order has been received and confirmed. Here are the details:
+            
+
+            
+            
+                📋 Order Information
+                
+                    Order ID:
+                    #ORD-20251210-6446
+                
+                
+                    Order Date:
+                    December 10, 2025 9:06 AM
+                
+            
+
+            
+            
+                🚚 Delivery Information
+                
+                    Date:
+                    Wednesday, December 17, 2025
+                
+                
+                    Time:
+                    10:00 AM
+                
+                
+                    Address:
+                    Test Address, Nairobi
+                
+            
+
+            
+            🛒 Order Items
+            
+                
+                    
+                        Item
+                        Qty
+                        Price
+                    
+                
+                
+                                        
+                        
+                            Wedding Package
+                                                        Complete wedding package
+                                                    
+                        1
+                        KES 50,000.00
+                    
+                                    
+            
+
+            
+            
+                
+                    Subtotal:
+                    KES 50,000.00
+                
+                
+                    ✅ Deposit Paid:
+                    KES 25,000.00
+                
+                
+                    ⏳ Balance Due (on delivery):
+                    KES 25,000.00
+                
+            
+
+                        
+            
+                📝 Special Instructions
+                Please call before delivery
+            
+            
+            
+            
+                ⚠️ Payment Reminder:
+                The remaining balance of KES 25,000.00 is due on delivery.
+                Payment can be made via M-Pesa or cash.
+            
+
+            
+            
+                📞 Contact Us
+                
+                    If you have any questions about your order, please don't hesitate to contact us:
+                    Phone: +254 700 000 000
+                    Email: orders@suvaya.com
+                
+            
+
+            
+                We're working hard to make your order perfect. Thank you for choosing The Suvaya Experience!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:06:47
+To: admin@suvaya.com
+Subject: Order Confirmation #ORD-20251210-6811 - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Order Receipt - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .items-table th {
+            background-color: #b28704;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .items-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .items-table tr:last-child td {
+            border-bottom: none;
+        }
+        .items-table .item-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .items-table .item-quantity {
+            text-align: center;
+        }
+        .items-table .item-price {
+            text-align: right;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+        .totals-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        .total-row.highlight {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2e7d32;
+            border-top: 2px solid #b28704;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+        .total-row.balance {
+            color: #d32f2f;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .items-table th,
+            .items-table td {
+                padding: 8px 5px;
+                font-size: 13px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            Hello Admin!
+
+            
+                Thank you for your order! We're excited to prepare your delicious treats.
+                Your order has been received and confirmed. Here are the details:
+            
+
+            
+            
+                📋 Order Information
+                
+                    Order ID:
+                    #ORD-20251210-6811
+                
+                
+                    Order Date:
+                    December 10, 2025 9:06 AM
+                
+            
+
+            
+            
+                🚚 Delivery Information
+                
+                    Date:
+                    Thursday, December 18, 2025
+                
+                
+                    Time:
+                    2:04 PM
+                
+                
+                    Address:
+                    Kiaora, Juja, Kiambu
+                
+            
+
+            
+            🛒 Order Items
+            
+                
+                    
+                        Item
+                        Qty
+                        Price
+                    
+                
+                
+                                        
+                        
+                            Red Velvet Cake
+                                                        Classic red velvet with cream cheese frosting
+                                                    
+                        1
+                        KES 4,000.00
+                    
+                                        
+                        
+                            Premium Anniversary Package
+                                                        Romantic anniversary celebration
+                                                    
+                        1
+                        KES 35,000.00
+                    
+                                        
+                        
+                            Red Velvet
+                                                        Red Velvet Description
+                                                    
+                        1
+                        KES 4,000.00
+                    
+                                    
+            
+
+            
+            
+                
+                    Subtotal:
+                    KES 43,000.00
+                
+                
+                    ✅ Deposit Paid:
+                    KES 21,500.00
+                
+                
+                    ⏳ Balance Due (on delivery):
+                    KES 21,500.00
+                
+            
+
+            
+            
+            
+                ⚠️ Payment Reminder:
+                The remaining balance of KES 21,500.00 is due on delivery.
+                Payment can be made via M-Pesa or cash.
+            
+
+            
+            
+                📞 Contact Us
+                
+                    If you have any questions about your order, please don't hesitate to contact us:
+                    Phone: +254 700 000 000
+                    Email: orders@suvaya.com
+                
+            
+
+            
+                We're working hard to make your order perfect. Thank you for choosing The Suvaya Experience!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:06:47
+To: chegeeddie@gmail.com
+Subject: Order Confirmation #ORD-20251210-6811 - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Order Receipt - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .items-table th {
+            background-color: #b28704;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .items-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .items-table tr:last-child td {
+            border-bottom: none;
+        }
+        .items-table .item-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .items-table .item-quantity {
+            text-align: center;
+        }
+        .items-table .item-price {
+            text-align: right;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+        .totals-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        .total-row.highlight {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2e7d32;
+            border-top: 2px solid #b28704;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+        .total-row.balance {
+            color: #d32f2f;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .items-table th,
+            .items-table td {
+                padding: 8px 5px;
+                font-size: 13px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            Hello Admin!
+
+            
+                Thank you for your order! We're excited to prepare your delicious treats.
+                Your order has been received and confirmed. Here are the details:
+            
+
+            
+            
+                📋 Order Information
+                
+                    Order ID:
+                    #ORD-20251210-6811
+                
+                
+                    Order Date:
+                    December 10, 2025 9:06 AM
+                
+            
+
+            
+            
+                🚚 Delivery Information
+                
+                    Date:
+                    Thursday, December 18, 2025
+                
+                
+                    Time:
+                    2:04 PM
+                
+                
+                    Address:
+                    Kiaora, Juja, Kiambu
+                
+            
+
+            
+            🛒 Order Items
+            
+                
+                    
+                        Item
+                        Qty
+                        Price
+                    
+                
+                
+                                        
+                        
+                            Red Velvet Cake
+                                                        Classic red velvet with cream cheese frosting
+                                                    
+                        1
+                        KES 4,000.00
+                    
+                                        
+                        
+                            Premium Anniversary Package
+                                                        Romantic anniversary celebration
+                                                    
+                        1
+                        KES 35,000.00
+                    
+                                        
+                        
+                            Red Velvet
+                                                        Red Velvet Description
+                                                    
+                        1
+                        KES 4,000.00
+                    
+                                    
+            
+
+            
+            
+                
+                    Subtotal:
+                    KES 43,000.00
+                
+                
+                    ✅ Deposit Paid:
+                    KES 21,500.00
+                
+                
+                    ⏳ Balance Due (on delivery):
+                    KES 21,500.00
+                
+            
+
+            
+            
+            
+                ⚠️ Payment Reminder:
+                The remaining balance of KES 21,500.00 is due on delivery.
+                Payment can be made via M-Pesa or cash.
+            
+
+            
+            
+                📞 Contact Us
+                
+                    If you have any questions about your order, please don't hesitate to contact us:
+                    Phone: +254 700 000 000
+                    Email: orders@suvaya.com
+                
+            
+
+            
+                We're working hard to make your order perfect. Thank you for choosing The Suvaya Experience!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:16:30
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 22, 2025
+                🕐 4:20 PM
+                
+                    👥 6 Guests                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Monday, December 22, 2025
+                
+                
+                    Time:
+                    4:20 PM
+                
+                
+                    Number of Guests:
+                    6
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================
+
+================================================================================
+Timestamp: 2025-12-10 09:16:30
+To: chegeeddie@gmail.com
+Subject: Reservation Confirmed - The Suvaya Experience
+--------------------------------------------------------------------------------
+Body:
+
+
+
+    
+    
+    Reservation Confirmation - The Suvaya Experience
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #b28704 0%, #d4a017 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #b28704;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .message {
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        .confirmation-badge {
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .confirmation-badge .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .confirmation-badge h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .confirmation-badge p {
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+        .info-section {
+            background-color: #fffbe6;
+            border-left: 4px solid #b28704;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-section h3 {
+            margin: 0 0 10px 0;
+            color: #b28704;
+            font-size: 16px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        .info-value {
+            color: #333;
+            text-align: right;
+            font-weight: 500;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fffbe6 0%, #fff8dc 100%);
+            border: 2px solid #b28704;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .highlight-box .date {
+            font-size: 32px;
+            font-weight: 700;
+            color: #b28704;
+            margin: 10px 0;
+        }
+        .highlight-box .time {
+            font-size: 24px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .alert-box strong {
+            color: #856404;
+        }
+        .checklist {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .checklist h3 {
+            color: #b28704;
+            margin: 0 0 15px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        .checklist-item .icon {
+            color: #2e7d32;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer a {
+            color: #b28704;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            background-color: #b28704;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .highlight-box .date {
+                font-size: 24px;
+            }
+            .highlight-box .time {
+                font-size: 18px;
+            }
+        }
+    
+
+
+    
+        
+        
+            🎂 The Suvaya Experience
+            Artisan Baking & Events
+        
+
+        
+        
+            
+            
+                ✓
+                Reservation Confirmed!
+                Your booking has been successfully confirmed
+            
+
+            Hello Eddie Chege!
+
+            
+                Thank you for choosing The Suvaya Experience for your special occasion!
+                We're thrilled to confirm your reservation. Your date has been secured, and we're looking forward to making your event memorable.
+            
+
+            
+            
+                📅 Your Reservation
+                December 22, 2025
+                🕐 4:20 PM
+                
+                    👥 6 Guests                
+            
+
+            
+            
+                📋 Reservation Details
+                
+                    Name:
+                    Eddie Chege
+                
+                
+                    Email:
+                    chegeeddie@gmail.com
+                
+                
+                    Phone:
+                    0701684754
+                
+                
+                    Date:
+                    Monday, December 22, 2025
+                
+                
+                    Time:
+                    4:20 PM
+                
+                
+                    Number of Guests:
+                    6
+                
+            
+
+            
+            
+            
+                💰 Payment Information:
+                A 50% deposit is required to confirm your reservation. We'll send you payment instructions shortly.
+                The remaining balance will be due on delivery or at the event.
+            
+
+            
+            
+                ✨ What Happens Next?
+                
+                    ✓
+                    
+                        Payment Instructions:
+                        You'll receive payment instructions via M-Pesa or our preferred payment method.
+                    
+                
+                
+                    ✓
+                    
+                        Order Confirmation:
+                        Once your deposit is received, we'll confirm your order and start preparation.
+                    
+                
+                
+                    ✓
+                    
+                        Final Details:
+                        We'll contact you 2-3 days before your event to finalize any last details.
+                    
+                
+                
+                    ✓
+                    
+                        Delivery/Pickup:
+                        Your order will be ready at the scheduled time. We'll send a reminder the day before.
+                    
+                
+            
+
+            
+            
+                ⚠️ Important Reminders
+                
+                    Please arrive 15 minutes early if you're picking up your order
+                    For delivery orders, ensure someone is available at the delivery address
+                    If you need to make changes, contact us at least 48 hours in advance
+                    Cancellations made less than 48 hours before the event may be subject to a cancellation fee
+                
+            
+
+            
+            
+                📞 Need to Make Changes?
+                
+                    If you need to modify or cancel your reservation, please contact us as soon as possible:
+                    Phone: +254 700 000 000
+                    Email: reservations@suvaya.com
+                    Hours: Monday - Saturday, 9:00 AM - 6:00 PM
+                
+            
+
+            
+                We're excited to be part of your special occasion and can't wait to create something amazing for you!
+                
+                    With love,
+                    The Suvaya Team
+                
+            
+        
+
+        
+        
+            © 2025 The Suvaya Experience. All rights reserved.
+            
+                Visit Our Website |
+                Contact Us |
+                View My Reservations
+            
+            
+                This is an automated confirmation email for your reservation at The Suvaya Experience.
+            
+        
+    
+
+
+
+================================================================================

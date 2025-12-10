@@ -13,20 +13,27 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $data = json_decode(file_get_contents("php://input"));
 
 // Validate required fields
-if (empty($data->name) || empty($data->category)) {
+if (empty($data->id) || empty($data->name) || empty($data->category)) {
     sendError(400, 'Missing required fields');
 }
 
 try {
     $db->beginTransaction();
 
-    // Insert menu item
-    $query = "INSERT INTO menu_items
-              (name, category, description, price, stock_quantity, image, kg, is_available)
-              VALUES
-              (:name, :category, :description, :price, :stock_quantity, :image, :kg, :is_available)";
+    // Update menu item
+    $query = "UPDATE menu_items SET
+              name = :name,
+              category = :category,
+              description = :description,
+              price = :price,
+              stock_quantity = :stock_quantity,
+              image = :image,
+              kg = :kg,
+              is_available = :is_available
+              WHERE id = :id";
 
     $stmt = $db->prepare($query);
+    $stmt->bindParam(':id', $data->id);
     $stmt->bindParam(':name', $data->name);
     $stmt->bindParam(':category', $data->category);
     $description = $data->description ?? '';
@@ -43,26 +50,53 @@ try {
     $stmt->bindParam(':is_available', $is_available);
 
     $stmt->execute();
-    $menu_item_id = $db->lastInsertId();
 
-    // Insert package if exists
+    // Check if update was successful
+    if ($stmt->rowCount() === 0) {
+        // Check if item exists
+        $checkQuery = "SELECT id FROM menu_items WHERE id = :id";
+        $checkStmt = $db->prepare($checkQuery);
+        $checkStmt->bindParam(':id', $data->id);
+        $checkStmt->execute();
+
+        if ($checkStmt->rowCount() === 0) {
+            $db->rollBack();
+            sendError(404, 'Menu item not found');
+        }
+    }
+
+    // Update or delete package
     if (!empty($data->package)) {
+        // Delete existing package
+        $deletePackageQuery = "DELETE FROM menu_packages WHERE menu_item_id = :menu_item_id";
+        $deletePackageStmt = $db->prepare($deletePackageQuery);
+        $deletePackageStmt->bindParam(':menu_item_id', $data->id);
+        $deletePackageStmt->execute();
+
+        // Insert new package
         $packageQuery = "INSERT INTO menu_packages (menu_item_id, includes)
                         VALUES (:menu_item_id, :includes)";
         $packageStmt = $db->prepare($packageQuery);
-        $packageStmt->bindParam(':menu_item_id', $menu_item_id);
+        $packageStmt->bindParam(':menu_item_id', $data->id);
         $includes = json_encode($data->package->includes);
         $packageStmt->bindParam(':includes', $includes);
         $packageStmt->execute();
     }
 
-    // Insert baking class if exists
+    // Update or delete baking class
     if (!empty($data->class)) {
+        // Delete existing class
+        $deleteClassQuery = "DELETE FROM baking_classes WHERE menu_item_id = :menu_item_id";
+        $deleteClassStmt = $db->prepare($deleteClassQuery);
+        $deleteClassStmt->bindParam(':menu_item_id', $data->id);
+        $deleteClassStmt->execute();
+
+        // Insert new class
         $classQuery = "INSERT INTO baking_classes
                        (menu_item_id, details, price, duration, max_participants)
                        VALUES (:menu_item_id, :details, :price, :duration, :max_participants)";
         $classStmt = $db->prepare($classQuery);
-        $classStmt->bindParam(':menu_item_id', $menu_item_id);
+        $classStmt->bindParam(':menu_item_id', $data->id);
         $classStmt->bindParam(':details', $data->class->details);
         $classStmt->bindParam(':price', $data->class->price);
         $duration = $data->class->duration ?? null;
@@ -74,12 +108,12 @@ try {
 
     $db->commit();
 
-    sendResponse(201, 'Menu item created successfully', [
-        'menu_item_id' => $menu_item_id
+    sendResponse(200, 'Menu item updated successfully', [
+        'menu_item_id' => $data->id
     ]);
 
 } catch (Exception $e) {
     $db->rollBack();
-    sendError(500, 'Failed to create menu item: ' . $e->getMessage());
+    sendError(500, 'Failed to update menu item: ' . $e->getMessage());
 }
 ?>

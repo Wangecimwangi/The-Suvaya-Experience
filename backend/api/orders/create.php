@@ -67,17 +67,36 @@ try {
 
     // Insert order items
     $itemQuery = "INSERT INTO order_items
-                  (order_id, menu_item_id, item_name, quantity, price, subtotal, notes)
+                  (order_id, menu_item_id, package_id, item_type, item_name, quantity, price, subtotal, notes)
                   VALUES
-                  (:order_id, :menu_item_id, :item_name, :quantity, :price, :subtotal, :notes)";
+                  (:order_id, :menu_item_id, :package_id, :item_type, :item_name, :quantity, :price, :subtotal, :notes)";
     $itemStmt = $db->prepare($itemQuery);
 
     // Prepare items array for email
     $emailItems = [];
     foreach ($data->items as $item) {
         $itemStmt->bindParam(':order_id', $order_id);
-        $menu_item_id = $item->id ?? null;
-        $itemStmt->bindParam(':menu_item_id', $menu_item_id);
+
+        // Determine if this is a menu item or package
+        $item_id = $item->id ?? null;
+        $is_package = is_string($item_id) && strpos($item_id, 'pkg-') === 0;
+
+        if ($is_package) {
+            // This is a package
+            $menu_item_id = null;
+            $package_id = $item_id;
+            $item_type = 'package';
+        } else {
+            // This is a menu item
+            $menu_item_id = is_numeric($item_id) ? (int)$item_id : null;
+            $package_id = null;
+            $item_type = 'menu_item';
+        }
+
+        // Use bindValue with proper types for nullable integers
+        $itemStmt->bindValue(':menu_item_id', $menu_item_id, $menu_item_id === null ? PDO::PARAM_NULL : PDO::PARAM_INT);
+        $itemStmt->bindValue(':package_id', $package_id, $package_id === null ? PDO::PARAM_NULL : PDO::PARAM_STR);
+        $itemStmt->bindParam(':item_type', $item_type);
         $item_name = $item->name ?? '';
         $itemStmt->bindParam(':item_name', $item_name);
         $itemStmt->bindParam(':quantity', $item->quantity);
@@ -93,7 +112,8 @@ try {
             'name' => $item_name,
             'description' => $item->description ?? '',
             'quantity' => $item->quantity,
-            'price' => $item->price
+            'price' => $item->price,
+            'type' => $item_type
         ];
     }
 

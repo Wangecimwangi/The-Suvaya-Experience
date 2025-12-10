@@ -2,7 +2,7 @@
 class Database {
     private $host = "localhost";
     private $db_name = "suvaya_db";
-    private $username = "root";
+    private $username = "eddiechege";
     private $password = "";
     private $conn;
 

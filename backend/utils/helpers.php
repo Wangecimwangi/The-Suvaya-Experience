@@ -2,6 +2,7 @@
 function sendResponse($status, $message, $data = null) {
     http_response_code($status);
     echo json_encode([
+        'success' => true,
         'status' => $status,
         'message' => $message,
         'data' => $data
@@ -12,8 +13,10 @@ function sendResponse($status, $message, $data = null) {
 function sendError($status, $message) {
     http_response_code($status);
     echo json_encode([
+        'success' => false,
         'status' => $status,
-        'error' => $message
+        'error' => $message,
+        'message' => $message
     ]);
     exit();
 }

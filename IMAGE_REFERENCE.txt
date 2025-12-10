@@ -1,0 +1,151 @@
+===============================================
+SUVAYA BAKERY - IMAGE REFERENCE GUIDE
+===============================================
+
+This document lists all available images in the public folder.
+Use these paths when adding menu items in the Admin panel.
+
+===============================================
+CAKE IMAGES (public/Cakes/)
+===============================================
+/Cakes/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg
+/Cakes/annie-spratt-6SHd7Q-l1UQ-unsplash.jpg
+/Cakes/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg
+/Cakes/brett-wharton-gvx8eV-bF-Y-unsplash.jpg
+/Cakes/camera-crew-Y7Gv_O-agc0-unsplash.jpg
+/Cakes/david-holifield-_zP1AHiq6Vg-unsplash.jpg
+/Cakes/deva-williamson-tW0Ix_Ajg6Y-unsplash.jpg
+/Cakes/fernando-dantas-l9EtbJ9r8Q0-unsplash.jpg
+/Cakes/gary-scott-ZAmuhhFfzkc-unsplash.jpg
+/Cakes/gruescu-ovidiu-UiJtiiAmJec-unsplash.jpg
+/Cakes/hailey-tong-3ArfXaXxLCM-unsplash.jpg
+/Cakes/james-coleman-5HR1gItc7Gs-unsplash.jpg
+/Cakes/jodi-pender-54P2t0sEVKc-unsplash.jpg
+/Cakes/jonathan-borba-jJ-_AO2C4gw-unsplash.jpg
+/Cakes/majdah-majed-dqAgRYxjAJQ-unsplash.jpg
+/Cakes/natallia-nagorniak-tA3sJ4u09eU-unsplash.jpg
+/Cakes/sheila-marie-XRzcex2n_5E-unsplash.jpg
+/Cakes/sincerely-media-z10eH_RA6ZQ-unsplash.jpg
+
+===============================================
+MENU/FOOD IMAGES (public/Menu/)
+===============================================
+/Menu/adriaan-venner-scheepers-SzYoz6SOpIU-unsplash.jpg
+/Menu/alex-munsell-Yr4n8O_3UPc-unsplash.jpg
+/Menu/alex-munsell-auIbTAcSH6E-unsplash.jpg
+/Menu/alexandra-gornago-YjadnXdoa6s-unsplash.jpg
+/Menu/bon-vivant-qom5MPOER-I-unsplash.jpg
+/Menu/brooke-lark-R18ecx07b3c-unsplash.jpg
+/Menu/carolyn-christine-PzRF6Xb5aAA-unsplash.jpg
+/Menu/junaid-rahim-4kHbTSg5w78-unsplash.jpg
+/Menu/kabir-cheema-oUIPGCBx2OI-unsplash.jpg
+/Menu/lana-mattice-gKrxflp1wv0-unsplash.jpg
+/Menu/leo-roza-CLMpC9UhyTo-unsplash.jpg
+/Menu/lore-schodts-hqRZbRbmmGU-unsplash.jpg
+/Menu/max-griss-VVKUBAeRyAI-unsplash.jpg
+/Menu/monika-grabkowska-pHeX8H9WQpY-unsplash.jpg
+/Menu/nathan-dumlao-tA90pRfL2gM-unsplash.jpg
+/Menu/nikita-tikhomirov-vAkIPzXOSOc-unsplash.jpg
+/Menu/olayinka-babalola-r01ZopTiEV8-unsplash.jpg
+/Menu/robin-stickel-tzl1UCXg5Es-unsplash.jpg
+/Menu/shraga-kopstein-kCOwRaWW9Dk-unsplash.jpg
+/Menu/svitlana-vexxZA_JNso-unsplash.jpg
+/Menu/tai-s-captures-2EBTwzczg2A-unsplash.jpg
+/Menu/victoria-shes-UC0HZdUitWY-unsplash (1).jpg
+/Menu/whitney-wright-TgQkxQc-t_U-unsplash.jpg
+/Menu/yiseul-han-_K-yx6wIgt8-unsplash.jpg
+/Menu/yulia-khlebnikova-yIE7pZUmT_s-unsplash.jpg
+
+===============================================
+SUGGESTED USAGE EXAMPLES
+===============================================
+
+CAKES:
+- Chocolate Cake: /Cakes/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg
+- Strawberry Cake: /Cakes/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg
+- Carrot Cake: /Cakes/brett-wharton-gvx8eV-bF-Y-unsplash.jpg
+- Red Velvet: /Cakes/camera-crew-Y7Gv_O-agc0-unsplash.jpg
+- Birthday Cake: /Cakes/david-holifield-_zP1AHiq6Vg-unsplash.jpg
+- Wedding Cake: /Cakes/deva-williamson-tW0Ix_Ajg6Y-unsplash.jpg
+- Fruit Cake: /Cakes/fernando-dantas-l9EtbJ9r8Q0-unsplash.jpg
+- Lemon Cake: /Cakes/gary-scott-ZAmuhhFfzkc-unsplash.jpg
+- Coffee Cake: /Cakes/gruescu-ovidiu-UiJtiiAmJec-unsplash.jpg
+- Rainbow Cake: /Cakes/hailey-tong-3ArfXaXxLCM-unsplash.jpg
+- Black Forest: /Cakes/james-coleman-5HR1gItc7Gs-unsplash.jpg
+- Funfetti: /Cakes/jodi-pender-54P2t0sEVKc-unsplash.jpg
+- Mocha Cake: /Cakes/jonathan-borba-jJ-_AO2C4gw-unsplash.jpg
+- Ube Cake: /Cakes/majdah-majed-dqAgRYxjAJQ-unsplash.jpg
+- Pistachio: /Cakes/natallia-nagorniak-tA3sJ4u09eU-unsplash.jpg
+- Marble Cake: /Cakes/sheila-marie-XRzcex2n_5E-unsplash.jpg
+- Coconut: /Cakes/sincerely-media-z10eH_RA6ZQ-unsplash.jpg
+- Cupcakes: /Cakes/annie-spratt-6SHd7Q-l1UQ-unsplash.jpg
+
+PASTRIES:
+- Eclairs: /Menu/adriaan-venner-scheepers-SzYoz6SOpIU-unsplash.jpg
+- Danish: /Menu/alex-munsell-Yr4n8O_3UPc-unsplash.jpg
+- Pain au Chocolat: /Menu/alex-munsell-auIbTAcSH6E-unsplash.jpg
+- Croissants: /Menu/bon-vivant-qom5MPOER-I-unsplash.jpg
+- Cinnamon Rolls: /Menu/brooke-lark-R18ecx07b3c-unsplash.jpg
+- Scones: /Menu/carolyn-christine-PzRF6Xb5aAA-unsplash.jpg
+
+DESSERTS:
+- Brownies: /Menu/junaid-rahim-4kHbTSg5w78-unsplash.jpg
+- Tiramisu: /Menu/kabir-cheema-oUIPGCBx2OI-unsplash.jpg
+- Macarons: /Menu/lana-mattice-gKrxflp1wv0-unsplash.jpg
+- Cheesecake: /Menu/leo-roza-CLMpC9UhyTo-unsplash.jpg
+- Apple Pie: /Menu/lore-schodts-hqRZbRbmmGU-unsplash.jpg
+- Lemon Tart: /Menu/max-griss-VVKUBAeRyAI-unsplash.jpg
+- Panna Cotta: /Menu/monika-grabkowska-pHeX8H9WQpY-unsplash.jpg
+
+DRINKS:
+- Orange Juice: /Menu/nathan-dumlao-tA90pRfL2gM-unsplash.jpg
+- Iced Coffee: /Menu/nikita-tikhomirov-vAkIPzXOSOc-unsplash.jpg
+- Hot Chocolate: /Menu/svitlana-vexxZA_JNso-unsplash.jpg
+- Milkshake: /Menu/tai-s-captures-2EBTwzczg2A-unsplash.jpg
+
+SNACKS:
+- Mandazi: /Menu/olayinka-babalola-r01ZopTiEV8-unsplash.jpg
+- Samosas: /Menu/robin-stickel-tzl1UCXg5Es-unsplash.jpg
+- Chapati: /Menu/shraga-kopstein-kCOwRaWW9Dk-unsplash.jpg
+- Spring Rolls: /Menu/whitney-wright-TgQkxQc-t_U-unsplash.jpg
+- Sausage Rolls: /Menu/yiseul-han-_K-yx6wIgt8-unsplash.jpg
+- Chicken Wings: /Menu/yulia-khlebnikova-yIE7pZUmT_s-unsplash.jpg
+
+===============================================
+HOW TO USE IN ADMIN PANEL
+===============================================
+
+1. Login to Admin Panel: http://localhost:5173/admin
+   - Email: admin@suvaya.com
+   - Password: admin123
+
+2. Go to the "Menu" tab
+
+3. Click "Add Item" button
+
+4. Fill in the form:
+   - Name: Enter product name (e.g., "Chocolate Cake")
+   - Description: Enter product description
+   - Category: Select from dropdown (Cakes, Pastries, Desserts, etc.)
+   - Price: Enter price in KES (e.g., 3500)
+   - Image Path: Copy the path from this document (e.g., /Cakes/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg)
+   - Weight (kg): For cakes, enter weight (e.g., 1.0, 1.5, 2.0) - Leave empty for non-cake items
+   - Stock Quantity: Enter 0 for made-to-order items
+   - Available: Toggle ON to make item available for purchase
+
+5. Click "Save"
+
+6. The menu item will now appear in the menu with the image!
+
+===============================================
+NOTES
+===============================================
+
+- All paths start with "/" (e.g., /Menu/... or /Cakes/...)
+- Do NOT include "public" in the path
+- Image paths are case-sensitive
+- Use the exact filename as shown in this document
+- If an image doesn't display, check that the filename matches exactly
+- You can also add your own images by placing them in the public/Menu or public/Cakes folders
+
+===============================================

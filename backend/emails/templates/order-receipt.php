@@ -19,8 +19,10 @@
  * - $special_instructions: Special instructions
  */
 
-function formatPrice($amount) {
-    return 'KES ' . number_format($amount, 2);
+if (!function_exists('formatPrice')) {
+    function formatPrice($amount) {
+        return 'KES ' . number_format($amount, 2);
+    }
 }
 ?>
 <!DOCTYPE html>

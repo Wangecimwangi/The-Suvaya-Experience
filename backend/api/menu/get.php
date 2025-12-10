@@ -60,8 +60,7 @@ try {
                   c.details as class_details, c.price as class_price
                   FROM menu_items m
                   LEFT JOIN menu_packages p ON m.id = p.menu_item_id
-                  LEFT JOIN baking_classes c ON m.id = c.menu_item_id
-                  WHERE m.available = TRUE";
+                  LEFT JOIN baking_classes c ON m.id = c.menu_item_id";
 
         if ($category && $category !== 'All') {
             $query .= " AND m.category = :category";

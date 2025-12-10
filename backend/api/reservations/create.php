@@ -38,13 +38,25 @@ try {
     // Start transaction
     $db->beginTransaction();
 
+    // Try to find user by email to link reservation
+    $user_id = null;
+    $userQuery = "SELECT id FROM users WHERE email = :email";
+    $userStmt = $db->prepare($userQuery);
+    $userStmt->bindParam(':email', $data->email);
+    $userStmt->execute();
+    $user = $userStmt->fetch();
+    if ($user) {
+        $user_id = $user['id'];
+    }
+
     // Insert reservation
     $query = "INSERT INTO reservations
-              (name, email, phone, date, time, guests, notes, status, deposit_paid)
+              (user_id, name, email, phone, date, time, guests, notes, status, deposit_paid)
               VALUES
-              (:name, :email, :phone, :date, :time, :guests, :notes, 'pending', FALSE)";
+              (:user_id, :name, :email, :phone, :date, :time, :guests, :notes, 'pending', FALSE)";
 
     $stmt = $db->prepare($query);
+    $stmt->bindParam(':user_id', $user_id);
     $stmt->bindParam(':name', $data->name);
     $stmt->bindParam(':email', $data->email);
     $stmt->bindParam(':phone', $data->phone);
